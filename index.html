@@ -30,9 +30,9 @@
     <h2>Player Selection & Session Filtering</h2>
     <div>
       <strong>Select Player:</strong>
-      <button onclick="selectPlayer('Both')">Both</button>
-      <button onclick="selectPlayer('Rasmus Kopperud Riis')">Rasmus</button>
-      <button onclick="selectPlayer('Reidar Andreas Tveit')">Andreas</button>
+      <button class="player-button" onclick="selectPlayer('Both', this)">Both</button>
+      <button class="player-button" onclick="selectPlayer('Rasmus Kopperud Riis', this)">Rasmus</button>
+      <button class="player-button" onclick="selectPlayer('Reidar Andreas Tveit', this)">Andreas</button>
     </div>
     <div style="margin-top:10px;">
       <label for="sessionCount">Show last</label>

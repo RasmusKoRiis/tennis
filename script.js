@@ -78,18 +78,75 @@ document.getElementById("themeToggle").addEventListener("click", function() {
   }
   
   /* ===================== Helper Functions ===================== */
+  function calculateIQRAverage(values) {
+    if (!values || values.length === 0) return null;
+    
+    // Sort the array in ascending order.
+    const sorted = values.slice().sort((a, b) => a - b);
+    const n = sorted.length;
+  
+    // A helper function to compute quartiles.
+    function getQuartile(sortedArr, q) {
+      const pos = (sortedArr.length - 1) * q;
+      const base = Math.floor(pos);
+      const rest = pos - base;
+      if (base + 1 < sortedArr.length) {
+        return sortedArr[base] + rest * (sortedArr[base + 1] - sortedArr[base]);
+      } else {
+        return sortedArr[base];
+      }
+    }
+    
+    // Calculate Q1 (25th percentile) and Q3 (75th percentile)
+    const Q1 = getQuartile(sorted, 0.25);
+    const Q3 = getQuartile(sorted, 0.75);
+    const IQR = Q3 - Q1;
+    
+    // Define lower and upper bounds (using 1.5 * IQR is common)
+    const lowerBound = Q1 - 1.5 * IQR;
+    const upperBound = Q3 + 1.5 * IQR;
+    
+    // Filter values to keep only those within the bounds
+    const filtered = sorted.filter(value => value >= lowerBound && value <= upperBound);
+    
+    // If no values remain, return null.
+    if (filtered.length === 0) return null;
+    
+    // Return the average of the filtered values.
+    const sum = filtered.reduce((total, value) => total + value, 0);
+    return sum / filtered.length;
+  }
+  
+  
   function calculateAverageSpeed(data) {
     if (!data || data.length === 0) return null;
-    let total = 0, count = 0;
+    let speeds = [];
     data.forEach(row => {
       let spd = parseFloat(row["Speed (KM/H)"]);
       if (!isNaN(spd)) {
-        total += spd;
-        count++;
+        speeds.push(spd);
       }
     });
-    return count ? parseFloat((total / count).toFixed(2)) : null;
+    if (speeds.length === 0) return null;
+    // Use the IQR-based method to compute a robust average
+    const avg = calculateIQRAverage(speeds);
+    return avg !== null ? parseFloat(avg.toFixed(2)) : null;
   }
+
+  function calculateRobustAverageSpeed(data) {
+    if (!data || data.length === 0) return null;
+    let speeds = [];
+    data.forEach(row => {
+      let spd = parseFloat(row["Speed (KM/H)"]);
+      if (!isNaN(spd)) {
+        speeds.push(spd);
+      }
+    });
+    if (speeds.length === 0) return null;
+    const avg = calculateIQRAverage(speeds);
+    return avg !== null ? parseFloat(avg.toFixed(2)) : null;
+  }
+  
   
   function calculateAccuracy(data) {
     if (!data || data.length === 0) return null;
@@ -101,6 +158,28 @@ document.getElementById("themeToggle").addEventListener("click", function() {
     });
     return data.length ? parseFloat(((inCount / data.length) * 100).toFixed(2)) : null;
   }
+
+  function calculateRobustAccuracy(data) {
+    if (!data || data.length === 0) return null;
+    let accuracies = [];
+    data.forEach(row => {
+      // Assign 100 for a successful ("in") shot and 0 otherwise.
+      let acc = (String(row.Result).toLowerCase() === "in") ? 100 : 0;
+      accuracies.push(acc);
+    });
+    if (accuracies.length === 0) return null;
+    const avg = calculateIQRAverage(accuracies);
+    return avg !== null ? parseFloat(avg.toFixed(2)) : null;
+  }
+
+  function computeComposite(robustSpeedArr, robustAccArr) {
+    return robustSpeedArr.map((spd, i) => {
+      let acc = robustAccArr[i];
+      if (spd === null || acc === null) return 0;
+      return parseFloat(((spd + acc) / 2).toFixed(2));
+    });
+  }
+  
   
   function computeOverallMetricsForPlayer(sessionsArr, stroke, player) {
     let totalSpeed = 0, countSpeed = 0, inCount = 0, totalShots = 0;
@@ -206,17 +285,36 @@ document.getElementById("themeToggle").addEventListener("click", function() {
   
   /* ===================== Data Processing ===================== */
   function processCSVData(data, fileName) {
+    // Default: use the file name (without extension)
+    let sessionLabel = fileName.split('.')[0];
+  
+    // If the CSV file includes a Date column in its first row, use that
+    if (data && data.length > 0 && data[0].Date) {
+      sessionLabel = data[0].Date;
+    }
+    
     const session = {
-      label: fileName || new Date().toLocaleString(),
+      label: sessionLabel, // This label now holds the date (if available)
       rawData: data
     };
+    
     sessions.push(session);
     updateDashboardAndCharts();
   }
   
+  
   /* ===================== UI Update Functions ===================== */
-  function selectPlayer(player) {
+  function selectPlayer(player, button) {
+    // Update the current player
     currentPlayer = player;
+    
+    // Remove the active class from all buttons inside the controls container
+    document.querySelectorAll('.controls button').forEach(btn => btn.classList.remove('active'));
+    
+    // Add the active class to the clicked button
+    button.classList.add('active');
+    
+    // Update the dashboard and charts accordingly
     updateDashboardAndCharts();
   }
   
@@ -276,23 +374,23 @@ document.getElementById("themeToggle").addEventListener("click", function() {
         const rServeData = session.rawData.filter(row => row.Player === "Rasmus Kopperud Riis" && row.Stroke === "Serve");
         const rForehandData = session.rawData.filter(row => row.Player === "Rasmus Kopperud Riis" && row.Stroke === "Forehand");
         const rBackhandData = session.rawData.filter(row => row.Player === "Rasmus Kopperud Riis" && row.Stroke === "Backhand");
-        rServeSpeed.push(calculateAverageSpeed(rServeData) || 0);
-        rForehandSpeed.push(calculateAverageSpeed(rForehandData) || 0);
-        rBackhandSpeed.push(calculateAverageSpeed(rBackhandData) || 0);
-        rServeAcc.push(calculateAccuracy(rServeData) || 0);
-        rForehandAcc.push(calculateAccuracy(rForehandData) || 0);
-        rBackhandAcc.push(calculateAccuracy(rBackhandData) || 0);
+        rServeSpeed.push(calculateRobustAverageSpeed(rServeData) || 0);
+        rForehandSpeed.push(calculateRobustAverageSpeed(rForehandData) || 0);
+        rBackhandSpeed.push(calculateRobustAverageSpeed(rBackhandData) || 0);
+        rServeAcc.push(calculateRobustAccuracy(rServeData) || 0);
+        rForehandAcc.push(calculateRobustAccuracy(rForehandData) || 0);
+        rBackhandAcc.push(calculateRobustAccuracy(rBackhandData) || 0);
         
         // Andreas data
         const aServeData = session.rawData.filter(row => row.Player === "Reidar Andreas Tveit" && row.Stroke === "Serve");
         const aForehandData = session.rawData.filter(row => row.Player === "Reidar Andreas Tveit" && row.Stroke === "Forehand");
         const aBackhandData = session.rawData.filter(row => row.Player === "Reidar Andreas Tveit" && row.Stroke === "Backhand");
-        aServeSpeed.push(calculateAverageSpeed(aServeData) || 0);
-        aForehandSpeed.push(calculateAverageSpeed(aForehandData) || 0);
-        aBackhandSpeed.push(calculateAverageSpeed(aBackhandData) || 0);
-        aServeAcc.push(calculateAccuracy(aServeData) || 0);
-        aForehandAcc.push(calculateAccuracy(aForehandData) || 0);
-        aBackhandAcc.push(calculateAccuracy(aBackhandData) || 0);
+        aServeSpeed.push(calculateRobustAverageSpeed(aServeData) || 0);
+        aForehandSpeed.push(calculateRobustAverageSpeed(aForehandData) || 0);
+        aBackhandSpeed.push(calculateRobustAverageSpeed(aBackhandData) || 0);
+        aServeAcc.push(calculateRobustAccuracy(aServeData) || 0);
+        aForehandAcc.push(calculateRobustAccuracy(aForehandData) || 0);
+        aBackhandAcc.push(calculateRobustAccuracy(aBackhandData) || 0);
       });
       
       // Compute composite metric for each stroke:
@@ -323,6 +421,8 @@ document.getElementById("themeToggle").addEventListener("click", function() {
       const gradAndreasBackhandProg = ctxProgress.createLinearGradient(0, 0, 0, ctxProgress.canvas.height);
       gradAndreasBackhandProg.addColorStop(0, colorConfig["Backhand"]["Reidar Andreas Tveit"].gradient.start);
       gradAndreasBackhandProg.addColorStop(1, colorConfig["Backhand"]["Reidar Andreas Tveit"].gradient.end);
+
+    
       
       const progressDatasets = [
         {
@@ -385,7 +485,7 @@ document.getElementById("themeToggle").addEventListener("click", function() {
           data: { labels: labels, datasets: progressDatasets },
           options: {
             responsive: true,
-            plugins: { legend: { labels: { color: '#fff' } } },
+            plugins: { legend: { labels: { color: '#fff', usePointStyle: true, usePointStyle: true } } },
             scales: {
               x: {
                 title: { display: true, text: 'Session', color: '#fff' },
@@ -484,7 +584,7 @@ document.getElementById("themeToggle").addEventListener("click", function() {
           data: { labels: labels, datasets: speedDatasets },
           options: {
             responsive: true,
-            plugins: { legend: { labels: { color: '#fff' } } },
+            plugins: { legend: { labels: { color: '#fff', usePointStyle: true, usePointStyle: true } } },
             scales: {
               x: { title: { display: true, text: 'Session', color: '#fff' }, grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#fff' } },
               y: { title: { display: true, text: 'Avg Speed (km/h)', color: '#fff' }, grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#fff' } }
@@ -575,7 +675,7 @@ document.getElementById("themeToggle").addEventListener("click", function() {
           data: { labels: labels, datasets: accuracyDatasets },
           options: {
             responsive: true,
-            plugins: { legend: { labels: { color: '#fff' } } },
+            plugins: { legend: { labels: { color: '#fff', usePointStyle: true, usePointStyle: true } } },
             scales: {
               x: { title: { display: true, text: 'Session', color: '#fff' }, grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#fff' } },
               y: { title: { display: true, text: 'Accuracy (%)', color: '#fff' }, grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#fff' }, min: 0, max: 100 }
@@ -593,12 +693,12 @@ document.getElementById("themeToggle").addEventListener("click", function() {
         const sData = session.rawData.filter(row => row.Player === player && row.Stroke === "Serve");
         const fData = session.rawData.filter(row => row.Player === player && row.Stroke === "Forehand");
         const bData = session.rawData.filter(row => row.Player === player && row.Stroke === "Backhand");
-        serveSpeed.push(calculateAverageSpeed(sData) || 0);
-        forehandSpeed.push(calculateAverageSpeed(fData) || 0);
-        backhandSpeed.push(calculateAverageSpeed(bData) || 0);
-        serveAcc.push(calculateAccuracy(sData) || 0);
-        forehandAcc.push(calculateAccuracy(fData) || 0);
-        backhandAcc.push(calculateAccuracy(bData) || 0);
+        serveSpeed.push(calculateRobustAverageSpeed(sData) || 0);
+        forehandSpeed.push(calculateRobustAverageSpeed(fData) || 0);
+        backhandSpeed.push(calculateRobustAverageSpeed(bData) || 0);
+        serveAcc.push(calculateRobustAccuracy(sData) || 0);
+        forehandAcc.push(calculateRobustAccuracy(fData) || 0);
+        backhandAcc.push(calculateRobustAccuracy(bData) || 0);
       });
       
       const progServe = computeComposite(serveSpeed, serveAcc);
@@ -623,6 +723,8 @@ document.getElementById("themeToggle").addEventListener("click", function() {
           borderColor: colorConfig["Serve"][player].border,
           backgroundColor: gradServeProg,
           fill: true,
+          pointRadius: 10,        // Increase the radius of the points
+          pointHoverRadius: 7,   // Increase the radius when hovering
           tension: 0.1
         },
         {
@@ -631,6 +733,8 @@ document.getElementById("themeToggle").addEventListener("click", function() {
           borderColor: colorConfig["Forehand"][player].border,
           backgroundColor: gradForehandProg,
           fill: true,
+          pointRadius: 10,        // Increase the radius of the points
+          pointHoverRadius: 7,   // Increase the radius when hovering
           tension: 0.1
         },
         {
@@ -639,18 +743,21 @@ document.getElementById("themeToggle").addEventListener("click", function() {
           borderColor: colorConfig["Backhand"][player].border,
           backgroundColor: gradBackhandProg,
           fill: true,
+          pointRadius: 10,        // Increase the radius of the points
+          pointHoverRadius: 7,   // Increase the radius when hovering
           tension: 0.1
         }
       ];
       
       if (progressChart) {
-        progressChart.data.labels = labels;
+        progressChart.data.labels = filteredSessions.map(session => session.label);
         progressChart.data.datasets = progressDatasets;
+        progressChart.options.scales.x.title.text = 'Date'; // Update title to "Date"
         progressChart.update();
       } else {
         progressChart = new Chart(ctxProgress, {
           type: 'line',
-          data: { labels: labels, datasets: progressDatasets },
+          data: { labels: filteredSessions.map(session => session.label), datasets: progressDatasets },
           options: {
             responsive: true,
             plugins: { legend: { labels: { color: '#fff' } } },
@@ -680,6 +787,8 @@ document.getElementById("themeToggle").addEventListener("click", function() {
           borderColor: colorConfig["Serve"][player].border,
           backgroundColor: gradServe,
           fill: true,
+          pointRadius: 10,        // Increase the radius of the points
+          pointHoverRadius: 7,   // Increase the radius when hovering
           tension: 0.1
         },
         {
@@ -688,6 +797,8 @@ document.getElementById("themeToggle").addEventListener("click", function() {
           borderColor: colorConfig["Forehand"][player].border,
           backgroundColor: gradForehand,
           fill: true,
+          pointRadius: 10,        // Increase the radius of the points
+          pointHoverRadius: 7,   // Increase the radius when hovering
           tension: 0.1
         },
         {
@@ -696,6 +807,8 @@ document.getElementById("themeToggle").addEventListener("click", function() {
           borderColor: colorConfig["Backhand"][player].border,
           backgroundColor: gradBackhand,
           fill: true,
+          pointRadius: 10,        // Increase the radius of the points
+          pointHoverRadius: 7,   // Increase the radius when hovering
           tension: 0.1
         }
       ];
@@ -737,6 +850,8 @@ document.getElementById("themeToggle").addEventListener("click", function() {
           borderColor: colorConfig["Serve"][player].border,
           backgroundColor: gradServeAcc,
           fill: true,
+          pointRadius: 10,        // Increase the radius of the points
+          pointHoverRadius: 7,   // Increase the radius when hovering
           tension: 0.1
         },
         {
@@ -745,6 +860,8 @@ document.getElementById("themeToggle").addEventListener("click", function() {
           borderColor: colorConfig["Forehand"][player].border,
           backgroundColor: gradForehandAcc,
           fill: true,
+          pointRadius: 10,        // Increase the radius of the points
+          pointHoverRadius: 7,   // Increase the radius when hovering
           tension: 0.1
         },
         {
@@ -753,6 +870,8 @@ document.getElementById("themeToggle").addEventListener("click", function() {
           borderColor: colorConfig["Backhand"][player].border,
           backgroundColor: gradBackhandAcc,
           fill: true,
+          pointRadius: 10,        // Increase the radius of the points
+          pointHoverRadius: 7,   // Increase the radius when hovering
           tension: 0.1
         }
       ];
