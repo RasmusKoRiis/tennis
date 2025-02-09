@@ -201,6 +201,11 @@ body {
       font-size: 1.2em;
     }
     
+    .chart-container {
+          min-height: 300px;  /* Increase if necessary */
+    }
+      
+    
     .dashboard,
     .controls,
     .chart-container {
