@@ -119,15 +119,18 @@ body {
   }
   
   /* Tennisball Rain Animation */
-  .tennisball {
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    background-image: url('tennisball-icon.svg');
-    background-size: cover;
-    pointer-events: none;
-    animation: fall 1s linear forwards;
-  }
+    .tennisball {
+        position: fixed;
+        /* Base size can be overridden by the animation */
+        width: 15px;
+        height: 15px;
+        background-image: url('tennisball-icon.svg');
+        background-size: cover;
+        pointer-events: none;
+        /* Default animation properties (animation-name will be set inline) */
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
   
   @keyframes fall {
     0% {
@@ -137,6 +140,41 @@ body {
     100% {
       top: 100vh;
       opacity: 0;
+    }
+  }
+
+  @keyframes fall_straight {
+    0% {
+      top: 0;
+      transform: translateX(0) scale(1);
+    }
+    100% {
+      top: 100vh;
+      transform: translateX(0) scale(1);
+    }
+  }
+
+  /* Fall toward: starts small and ends larger; drifts right */
+@keyframes fall_toward {
+    0% {
+      top: 0;
+      transform: translateX(0) scale(0.5);
+    }
+    100% {
+      top: 100vh;
+      transform: translateX(20vw) scale(1.5);
+    }
+  }
+  
+  /* Fall away: starts large and ends smaller; drifts left */
+  @keyframes fall_away {
+    0% {
+      top: 0;
+      transform: translateX(0) scale(1.5);
+    }
+    100% {
+      top: 100vh;
+      transform: translateX(-20vw) scale(0.5);
     }
   }
 

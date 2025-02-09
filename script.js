@@ -62,20 +62,39 @@ document.getElementById("themeToggle").addEventListener("click", function() {
   
   
   
-  
   function rainTennisballs() {
-    const ballCount = 200; // Adjust as needed
+    const ballCount = 200; // Increase the number as desired
     for (let i = 0; i < ballCount; i++) {
       const ball = document.createElement("div");
       ball.classList.add("tennisball");
+      
+      // Random horizontal starting position
       ball.style.left = Math.random() * 100 + "vw";
+      // Random delay before the animation starts (up to 0.5 seconds)
       ball.style.animationDelay = Math.random() * 0.5 + "s";
+      // Random duration between 1 and 3 seconds
+      ball.style.animationDuration = (Math.random() * 2 + 1) + "s";
+      
+      // Randomly choose one of the three animation names:
+      const rnd = Math.random();
+      if (rnd < 0.33) {
+        ball.style.animationName = "fall_straight";
+      } else if (rnd < 0.66) {
+        ball.style.animationName = "fall_toward";
+      } else {
+        ball.style.animationName = "fall_away";
+      }
+      
       document.body.appendChild(ball);
+      
+      // Remove the ball when its animation finishes
       ball.addEventListener("animationend", function() {
         ball.remove();
       });
     }
   }
+  
+  
   
   /* ===================== Helper Functions ===================== */
   function calculateIQRAverage(values) {
