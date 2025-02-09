@@ -182,4 +182,68 @@ body {
     background-color: #d32f2f;  /* A slightly different shade */
     border: 2px solid #fff;     /* Optional: adds a white border */
   }
+
+  /* ===================== Mobile Responsive Styles ===================== */
+@media only screen and (max-width: 768px) {
+    /* Reduce overall margins/padding and slightly increase base font size */
+    body {
+      margin: 10px;
+      font-size: 1.1em;
+    }
+    
+    h1 {
+      font-size: 1.8em;
+    }
+    h2 {
+      font-size: 1.4em;
+    }
+    h3 {
+      font-size: 1.2em;
+    }
+    
+    .dashboard,
+    .controls,
+    .chart-container {
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+    
+    /* Stack dashboard cards vertically */
+    .dashboard-cards {
+      flex-direction: column;
+    }
+    .dashboard-card {
+      margin: 5px 0;
+      flex: 1 1 100%;
+    }
+    
+    /* Increase button size for easier tapping */
+    button {
+      font-size: 1.2em;
+      padding: 10px 15px;
+      margin: 5px 0;
+    }
+    
+    input[type="number"] {
+      width: 80px;
+      padding: 8px;
+    }
+    
+    /* Ensure canvases fit within screen width */
+    canvas {
+      width: 100%;
+      height: auto;
+    }
+    
+    /* Reorganize controls: stack vertically */
+    .controls div {
+      margin-bottom: 10px;
+    }
+    
+    /* Adjust theme toggle to be more accessible on mobile */
+    .theme-toggle {
+      top: 5px;
+      right: 5px;
+    }
+  }
   
