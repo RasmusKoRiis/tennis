@@ -422,5 +422,5 @@ def update_charts(selected_player):
 server = app.server  # Expose the Flask server
 
 if __name__ == "__main__":
-    app.run_server(debug=True, port=8052)
+    app.run_server(debug=True, port=8053)
 
