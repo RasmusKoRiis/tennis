@@ -419,5 +419,8 @@ def update_charts(selected_player):
 # 4. Run the Dash App             #
 ###################################
 
+server = app.server  # Expose the Flask server
+
 if __name__ == "__main__":
     app.run_server(debug=True, port=8052)
+
