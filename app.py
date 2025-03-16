@@ -403,7 +403,7 @@ def update_charts(selected_player):
         margin=dict(t=20, b=20, l=20, r=20),
         xaxis=dict(title="", gridcolor="#2a3f5f"),
         # Here we set a static y-axis range, e.g. 0 to 1
-        yaxis=dict(title="Composite Index", gridcolor="#2a3f5f", range=[0,1]),
+        yaxis=dict(title="Composite Index", gridcolor="#2a3f5f", range=[0,0.5]),
         legend=dict(orientation="h", y=1.15, x=0.5, xanchor="center")
     )
 
