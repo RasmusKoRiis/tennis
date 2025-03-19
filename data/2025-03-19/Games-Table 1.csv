@@ -1,0 +1,14 @@
+Game;Set;Server;Host Set Score;Guest Set Score;Game Winner;Start Time;Video Time;Duration
+1;1;host;0;0;host;07:18:44;;131,910004
+2;1;guest;1;0;host;07:20:56;;316,940002
+3;1;host;2;0;guest;07:26:13;;120,050003
+4;1;guest;2;1;host;07:28:13;;349,220001
+5;1;host;3;1;host;07:34:02;;111,849998
+6;1;guest;4;1;host;07:35:54;;236,429993
+7;1;host;5;1;host;07:39:51;;213,520004
+8;2;guest;0;0;host;07:43:24;;358,019989
+9;2;host;1;0;host;07:49:22;;235,100006
+10;2;guest;2;0;guest;07:53:17;;182,179993
+11;2;host;2;1;host;07:56:20;;392,130005
+12;2;guest;3;1;host;08:02:52;;156,399994
+13;2;host;4;1;draw;08:05:28;;
