@@ -1,0 +1,374 @@
+Player;Shot;Type;Stroke;Spin;Speed (KM/H);Point;Game;Set;Bounce Depth;Bounce Zone;Bounce Side;Bounce (x);Bounce (y);Hit Depth;Hit Zone;Hit Side;Hit (x);Hit (y);Hit (z);Direction;Result;Favorited;Start Time;Video Time
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;138,257874;1;1;1;deep;deuce;near;2,561433;2,030622;deep;deuce;far;-0,416504;23,583591;2,367188;down the T;Out;false;06:20:18;31,280001
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;123,412094;1;1;1;short;deuce;near;2,51593;8,801864;deep;deuce;far;-0,345703;23,302341;2,476562;out wide;In;false;06:20:24;37,02
+Rikard Rykkvin;2;second_return;Forehand;Topspin;58,872223;1;1;1;short;deuce;near;3,246094;11,554688;deep;deuce;near;3,947266;-0,120655;0,892578;cross court;Net;false;06:20:25;38,279999
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;116,728455;2;1;1;deep;ad;near;-2,096829;3,137603;deep;ad;far;0,641113;23,489841;2,566406;down the T;Out;false;06:20:43;55,860001
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;90,110405;2;1;1;short;ad;near;-2,451549;6,658672;deep;ad;far;0,728516;23,896091;2,525391;out wide;In;false;06:20:49;61,630001
+Rikard Rykkvin;2;second_return;Forehand;Flat;85,694443;2;1;1;short;ad;far;3,555287;18,287191;out;ad;near;-2,097656;-2,026905;1,021484;inside out;In;false;06:20:50;62,830002
+Rasmus Kopperud Riis;3;serve_plus_one;Backhand;Slice;47,294071;2;1;1;short;deuce;near;3,488147;8,021184;out;ad_alley;far;4,371094;25,630466;0,84668;down the line;In;false;06:20:52;64,43
+Rikard Rykkvin;4;return_plus_one;Forehand;Flat;46,30183;2;1;1;short;deuce;near;2,603516;11,789062;deep;deuce;near;2,433594;3,797314;0,932617;cross court;Net;false;06:20:54;66,800003
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;145,972763;3;1;1;deep;deuce_out;near;6,198359;3,354894;deep;deuce;far;-0,346436;22,521091;2,322266;out wide;Out;false;06:21:17;89,540001
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;142,576965;3;1;1;short;deuce;near;0,966403;8,421095;deep;deuce;far;-0,223755;22,802341;2,34375;down the T;In;false;06:21:23;96,110001
+Rikard Rykkvin;2;second_return;Backhand;Flat;82,755882;3;1;1;deep;deuce;far;-2,603795;21,461218;out;deuce;near;2,130859;-2,495655;1,072266;inside out;In;false;06:21:24;97,279999
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Flat;109,141899;3;1;1;deep;ad_alley;near;-5,059129;4,707552;deep;deuce;far;-2,791016;23,771091;1,316406;down the line;Out;false;06:21:26;99,139999
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;51,797085;4;1;1;short;deuce;far;-2,529297;12,414062;deep;ad;far;0,176636;23,929508;2,335938;out wide;Net;false;06:21:48;120,349998
+Rasmus Kopperud Riis;1;second_serve;Serve;Kick;153,247482;4;1;1;short;ad;near;-1,883618;7,20637;deep;ad;far;0,580078;23,974216;2,507812;down the T;In;false;06:21:53;126,190002
+Rikard Rykkvin;2;second_return;Forehand;Flat;85,137985;4;1;1;deep;ad;far;3,529397;21,828403;out;ad;near;-2,453125;-1,245655;1,304688;inside out;In;false;06:21:54;127,260002
+Rasmus Kopperud Riis;3;serve_plus_one;Backhand;Topspin;70,008835;4;1;1;deep;ad;near;-0,371547;5,430948;out;ad;far;3,919922;24,646091;1,175781;cross court;In;false;06:21:56;129,089996
+Rikard Rykkvin;4;return_plus_one;Forehand;Topspin;89,264839;4;1;1;short;ad;far;3,192508;18,285097;out;ad;near;-1,282227;-0,16753;1,37207;inside out;In;false;06:21:58;130,720001
+Rasmus Kopperud Riis;5;in_play;Backhand;Slice;50,564312;4;1;1;short;deuce;near;2,715618;7,827699;out;ad_alley;far;4,203125;25,052341;0,806641;down the line;In;false;06:21:59;132,220001
+Rikard Rykkvin;6;in_play;Forehand;Topspin;71,217827;4;1;1;out;ad;far;3,238281;24,370718;deep;deuce;near;2,332031;2,17622;0,675781;down the line;Out;false;06:22:01;134,289993
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;139,332855;5;1;1;deep;deuce;near;2,197945;3,094447;deep;deuce;far;-0,447021;23,552341;2,353516;down the T;Out;false;06:22:21;154,270004
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;89,812798;5;1;1;short;deuce;near;2,38624;7,967166;deep;deuce;far;-0,47998;23,505466;2,421875;out wide;In;false;06:22:28;160,899994
+Rikard Rykkvin;2;none;Feed;Flat;29,268389;5;1;1;deep;ad;far;0,545937;20,9639;out;deuce;near;1,725586;-2,38628;0,653809;---;In;false;06:22:32;164,940002
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;159,321594;5;1;1;short;deuce;near;1,338929;8,53814;deep;deuce;far;0,095825;23,147434;2,224609;down the T;In;false;06:22:47;179,479996
+Rikard Rykkvin;2;second_return;Forehand;Topspin;50,335415;5;1;1;short;deuce;near;2,634766;11,460938;out;deuce;near;2,380859;-0,870655;0,922852;cross court;Net;false;06:22:48;180,509995
+Rikard Rykkvin;1;first_serve;Serve;Flat;95,844589;6;2;1;short;deuce;near;3,527352;7,889187;deep;deuce;far;-0,762695;23,271091;2,375;out wide;In;false;06:23:46;238,440002
+Rasmus Kopperud Riis;2;first_return;Forehand;Topspin;103,056648;6;2;1;deep;deuce;far;-1,96292;21,739878;out;deuce_alley;near;4,625;-0,245655;1,080078;down the line;In;false;06:23:47;239,570007
+Rikard Rykkvin;3;serve_plus_one;Forehand;Topspin;70,133118;6;2;1;short;deuce;near;0,867938;7,715737;deep;deuce;far;-2,664062;24,005466;0,95166;cross court;In;false;06:23:48;240,699997
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Flat;100,902786;6;2;1;deep;ad;far;3,095435;23,766462;deep;deuce;near;1,893555;0,535595;0,783691;down the line;In;false;06:23:50;242,399994
+Rikard Rykkvin;5;in_play;Backhand;Flat;64,516327;6;2;1;short;deuce;near;0,514648;7,773438;out;ad;far;2,849609;25,833591;0,887695;down the line;In;false;06:23:51;243,699997
+Rasmus Kopperud Riis;6;in_play;Volley;Flat;32,055855;6;2;1;deep;deuce_alley;far;-4,320312;18,96875;short;deuce;near;0,514648;7,64497;1,143555;down the line;Out;false;06:23:52;244,770004
+Rikard Rykkvin;1;first_serve;Serve;Flat;145,712051;7;2;1;short;ad;near;-3,450049;7,571651;deep;ad;far;0,88623;23,083591;2,494141;out wide;In;false;06:24:10;262,679993
+Rasmus Kopperud Riis;2;first_return;Backhand;Topspin;76,946724;7;2;1;deep;ad;far;0,456787;19,28125;deep;ad_alley;near;-4,785156;-0,089405;1,121094;down the line;In;false;06:24:11;263,579987
+Rikard Rykkvin;3;serve_plus_one;Volley;Flat;37,630787;7;2;1;deep;deuce;near;2,701172;1,539062;deep;ad;far;0,456787;19,927341;0,053711;down the line;In;false;06:24:12;264,579987
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Topspin;88,564583;7;2;1;short;deuce;far;-0,455811;13,335938;out;deuce;near;3,009766;-0,315967;1,355469;cross court;In;false;06:24:14;266,880005
+Rikard Rykkvin;5;in_play;Volley;Flat;28,768429;7;2;1;short;ad;near;-2,068066;6,457791;short;deuce;far;-0,455811;13,982029;1,291016;down the line;In;false;06:24:15;267,480011
+Rasmus Kopperud Riis;6;in_play;Backhand;Slice;61,642536;7;2;1;short;deuce;far;-1,492188;15,210938;deep;ad;near;-2,435547;4,36372;0,735352;down the line;In;false;06:24:17;269,679993
+Rikard Rykkvin;7;in_play;Forehand;Flat;67,044235;7;2;1;short;deuce;near;1,410947;7,007442;short;deuce;far;-1,492188;15,857029;1,419922;cross court;In;false;06:24:18;270,450012
+Rikard Rykkvin;1;first_serve;Serve;Flat;108,96814;8;2;1;short;deuce;near;2,568314;6,957696;deep;deuce;far;-0,177979;22,864841;1,908203;out wide;In;false;06:24:43;295,859985
+Rasmus Kopperud Riis;2;first_return;Forehand;Flat;78,732994;8;2;1;deep;ad;far;2,316406;19,90625;out;deuce_alley;near;4,21875;-0,519092;1,109375;down the line;In;false;06:24:44;297,130005
+Rikard Rykkvin;3;serve_plus_one;Volley;Slice;37,630787;8;2;1;short;ad;far;2,316406;17,398788;deep;ad;far;2,316406;20,552341;0,206543;cross court;Net;false;06:24:45;298,130005
+Rikard Rykkvin;4;return_plus_one;Volley;Flat;37,630787;8;2;1;short;ad;far;0,824707;15,414062;short;ad;far;1,72168;16,060154;1,362305;cross court;Net;false;06:24:46;298,690002
+Rikard Rykkvin;1;first_serve;Serve;Flat;96,430679;9;2;1;short;ad;near;-1,702148;6,980469;deep;ad;far;1,285156;23,677341;2,544922;down the T;In;false;06:25:09;321,570007
+Rasmus Kopperud Riis;2;first_return;Forehand;Topspin;82,591301;9;2;1;deep;deuce;far;-1,681914;22,907894;out;ad;near;-2,480469;-0,800342;1,326172;inside in;In;false;06:25:10;322,799988
+Rikard Rykkvin;3;serve_plus_one;Forehand;Flat;63,361263;9;2;1;deep;ad;near;-1,676672;5,457866;deep;deuce;far;-1,145508;24,333591;1,628906;down the line;In;false;06:25:12;324,369995
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Topspin;112,535812;9;2;1;short;ad;far;2,383455;18,272573;out;ad;near;-1,422852;-2,534717;0,93457;inside out;In;false;06:25:13;326,309998
+Rikard Rykkvin;5;in_play;Backhand;Slice;58,818199;9;2;1;deep;deuce;near;1,632221;3,526768;out;ad;far;3,058594;24,833591;1,394531;down the line;In;false;06:25:15;327,709991
+Rasmus Kopperud Riis;6;in_play;Forehand;Topspin;90,257317;9;2;1;deep;deuce;far;-2,906822;23,757168;deep;deuce;near;1,181641;-0,089405;1,158203;cross court;In;false;06:25:17;329,570007
+Rikard Rykkvin;7;in_play;Forehand;Topspin;101,299042;9;2;1;deep;deuce;far;-2,671875;23,282749;out;deuce;far;-2,777344;25,474216;0,932617;cross court;Net;false;06:25:18;330,709991
+Rikard Rykkvin;1;first_serve;Serve;Flat;65,548233;10;2;1;deep;deuce;near;1,883789;3,921875;deep;deuce;far;-0,412842;22,364841;2,263672;down the T;Out;false;06:25:38;351,079987
+Rikard Rykkvin;1;second_serve;Serve;Flat;64,556786;10;2;1;short;deuce;near;0,45814;8,132567;deep;deuce;far;-0,709961;23,583591;2,402344;down the T;In;false;06:25:45;358,149994
+Rasmus Kopperud Riis;2;second_return;Forehand;Flat;94,732445;10;2;1;short;deuce;far;-0,286986;18,255161;out;deuce;near;1,114258;-1,800342;0,566895;cross court;In;false;06:25:47;360,119995
+Rikard Rykkvin;3;serve_plus_one;Backhand;Slice;43,144146;10;2;1;short;deuce;far;-1,276367;18,052719;deep;deuce;far;-0,274658;24,317966;0,673828;inside out;Net;false;06:25:49;361,549988
+Rikard Rykkvin;0;none;Feed;Flat;37,630787;11;3;1;deep;deuce;near;2,527344;1,945312;deep;ad;far;1,299805;17,815809;1,824219;---;In;false;06:26:08;380,829987
+Rikard Rykkvin;1;none;Feed;Flat;40,418251;11;3;1;deep;deuce;near;0,940918;4,994749;deep;deuce;far;-1,833984;23,864841;0,84082;---;In;false;06:26:14;386,600006
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;144,320847;11;3;1;deep;deuce;far;-2,751912;19,825941;deep;deuce;near;0,280762;0,529916;2,236328;out wide;Out;false;06:26:29;402,070007
+Rikard Rykkvin;2;first_return;Forehand;Slice;50,155079;11;3;1;short;deuce;near;0,184162;9,545259;deep;deuce;far;-3,326172;23,802341;1,525391;cross court;In;false;06:26:30;402,910004
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Slice;56,376656;11;3;1;deep;deuce;far;-0,542951;22,293581;deep;deuce;near;1,092773;4,465282;0,570801;cross court;In;false;06:26:32;404,73999
+Rikard Rykkvin;4;return_plus_one;Forehand;Slice;84,808075;11;3;1;short;deuce;near;1,418945;6,138795;deep;deuce;far;-0,221313;23,724216;0,901367;cross court;In;false;06:26:34;406,540009
+Rasmus Kopperud Riis;5;in_play;Volley;Flat;12,213823;11;3;1;short;deuce;near;4,042969;7,402344;short;deuce;near;1,418945;11,059117;4,359375;cross court;Net;false;06:26:35;407,339996
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;134,910126;12;3;1;short;ad;far;3,268649;18,272573;deep;ad;near;0,105774;0,324658;2,263672;out wide;In;false;06:26:50;422,350006
+Rikard Rykkvin;2;first_return;Backhand;Slice;48,576824;12;3;1;deep;deuce;near;3,153536;4,730081;deep;ad_alley;far;4,238281;23,708591;1,326172;down the line;In;false;06:26:51;423,410004
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Flat;53,891094;12;3;1;short;deuce;near;1,608398;11,601562;deep;deuce;near;2,234375;1,777783;1,410156;cross court;Net;false;06:26:53;425,820007
+Rasmus Kopperud Riis;1;first_serve;Serve;Slice;125,915192;13;3;1;deep;deuce;far;-3,776269;22,051167;deep;deuce;near;0,486328;0,941845;2,419922;out wide;Out;false;06:27:10;443,220001
+Rikard Rykkvin;1;none;Forehand;Flat;60,501202;13;3;1;short;deuce;far;-2,802734;15,953125;out;deuce;far;-4,085938;24,974216;1,238281;cross court;Net;false;06:27:11;444,26001
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;108,84771;13;3;1;short;deuce;far;-0,928222;16,365437;deep;deuce;near;0,963379;0,910595;2,421875;down the T;In;false;06:27:17;449,630005
+Rikard Rykkvin;2;second_return;Backhand;Flat;65,440247;13;3;1;short;ad;near;-0,461664;6,495534;out;deuce;far;-2,074219;25,083591;1,348633;inside in;In;false;06:27:18;450,790009
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Topspin;91,727638;13;3;1;deep;deuce;far;-2,745697;23,7607;out;ad;near;-0,456543;-0,339405;1,099609;inside in;In;false;06:27:20;452,559998
+Rikard Rykkvin;4;return_plus_one;Forehand;Flat;60,098976;13;3;1;short;deuce;near;0,472412;5,738281;out;deuce;far;-2,529297;25,958591;0,978516;cross court;In;false;06:27:21;453,859985
+Rasmus Kopperud Riis;5;in_play;Forehand;Topspin;99,264046;13;3;1;deep;ad;far;1,616929;19,636866;deep;deuce;near;0,88623;1,965283;1,007812;down the line;In;false;06:27:23;455,730011
+Rikard Rykkvin;6;in_play;Backhand;Topspin;99,403229;13;3;1;short;deuce_alley;near;4,279562;6,81953;deep;ad;far;2,107422;24,177341;1,785156;down the line;Out;false;06:27:24;456,959991
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;134,04863;14;3;1;short;ad;far;3,15035;18,286367;deep;ad;near;-0,285156;0,51997;2,425781;out wide;In;false;06:27:49;481,369995
+Rikard Rykkvin;2;first_return;Backhand;Flat;60,797497;14;3;1;deep;deuce;near;0,165038;3,483129;deep;ad;far;3,789062;23,989841;1,310547;down the line;In;false;06:27:49;482,269989
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Flat;106,93676;14;3;1;out;deuce;far;-2,219437;26,442284;out;ad;near;-0,65332;-1,097217;1,396484;inside in;Out;false;06:27:51;484,040009
+Rasmus Kopperud Riis;1;first_serve;Serve;Slice;107,747452;15;3;1;short;deuce;far;-2,813545;17,373102;deep;deuce;near;0,850586;0,402783;2,541016;out wide;In;false;06:28:06;498,980011
+Rikard Rykkvin;2;first_return;Forehand;Topspin;72,737938;15;3;1;deep;ad;near;-0,184207;0,366744;out;deuce_alley;far;-4,894531;26,864841;0,873047;down the line;In;false;06:28:07;500,279999
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Topspin;78,561607;15;3;1;deep;deuce;far;-1,037224;22,676111;out;ad;near;-0,250732;-0,394092;1,227539;inside in;In;false;06:28:09;501,850006
+Rikard Rykkvin;4;return_plus_one;Forehand;Topspin;74,404861;15;3;1;short;ad;near;-0,9091;7,675461;out;deuce;far;-0,992188;25,427341;1,240234;down the line;In;false;06:28:11;503,480011
+Rasmus Kopperud Riis;5;in_play;Forehand;Flat;112,962357;15;3;1;deep;ad;far;3,145149;22,068544;out;ad;near;-0,642578;-2,35503;0,869141;inside out;In;false;06:28:12;505,079987
+Rikard Rykkvin;6;in_play;Backhand;Flat;68,201706;15;3;1;deep;deuce;near;1,672526;2,425488;out;ad;far;3,082031;25,333591;0,833008;down the line;In;false;06:28:14;506,380005
+Rasmus Kopperud Riis;7;in_play;Forehand;Topspin;54,800495;15;3;1;short;ad;near;-0,837891;11,625;deep;deuce;near;1,394531;0,83247;0,866699;down the line;Net;false;06:28:15;507,850006
+Rasmus Kopperud Riis;0;none;Feed;Flat;34,843319;16;4;1;short;deuce;far;-1,519531;18,193853;short;ad;near;-1,731445;10,09818;1,849609;---;In;false;06:28:51;543,72998
+Rikard Rykkvin;1;none;Feed;Flat;34,843319;16;4;1;deep;deuce;near;1,237305;1,851562;deep;deuce;far;-3,634766;20,349216;1,880859;---;In;false;06:29:02;555
+Rikard Rykkvin;1;first_serve;Serve;Flat;54,82946;16;4;1;short;ad;near;-1,014648;11,859375;deep;deuce;near;0,973145;1,184033;2,402344;down the T;Net;false;06:29:26;578,450012
+Rikard Rykkvin;1;second_serve;Serve;Flat;101,295525;16;4;1;short;deuce;far;-2,692294;18,269518;deep;deuce;near;1,085938;0,559033;2,597656;out wide;In;false;06:29:41;594,090027
+Rasmus Kopperud Riis;2;second_return;Forehand;Topspin;80,234375;16;4;1;deep;deuce;near;0,589681;2,601937;deep;deuce;far;-4,042969;23,396091;1,317383;cross court;In;false;06:29:42;595,320007
+Rikard Rykkvin;3;serve_plus_one;Backhand;Flat;73,609665;16;4;1;deep;ad;far;0,907959;23,771925;deep;deuce;near;0,387451;0,637158;0,953125;inside in;In;false;06:29:44;596,52002
+Rasmus Kopperud Riis;4;return_plus_one;Backhand;Flat;42,801968;16;4;1;deep;ad;far;1,655273;18,716555;deep;ad;far;1,00293;23,989841;0,835938;cross court;Net;false;06:29:45;598,090027
+Rikard Rykkvin;1;first_serve;Serve;Flat;131,494507;17;4;1;short;ad;far;1,175433;17,85577;deep;ad;near;-1,084961;0,247223;2,115234;down the T;In;false;06:30:00;612,559998
+Rasmus Kopperud Riis;1;none;Forehand;Topspin;58,746185;17;4;1;short;ad;near;-2,484375;6,742188;out;ad;far;1,953125;24,896091;1,191406;inside out;In;false;06:30:01;613,630005
+Rikard Rykkvin;1;second_serve;Serve;Slice;118,288284;17;4;1;short;ad;far;3,152671;18,199709;deep;ad;near;-1,791016;0,26997;2,373047;out wide;In;false;06:30:08;620,799988
+Rasmus Kopperud Riis;2;second_return;Backhand;Flat;64,071518;17;4;1;deep;deuce;near;2,915594;2,981379;out;ad_alley;far;4,308594;24,583591;1,544922;down the line;In;false;06:30:09;622,130005
+Rikard Rykkvin;3;serve_plus_one;Forehand;Topspin;77,548538;17;4;1;short;ad;far;0,876269;18,030909;out;deuce;near;2,599609;-2,128467;1,207031;down the line;In;false;06:30:12;624,330017
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Flat;90,591736;17;4;1;deep;deuce;near;1,638051;0,967018;deep;ad;far;0,864746;23,458591;1,347656;inside in;In;false;06:30:13;626,200012
+Rikard Rykkvin;5;in_play;Forehand;Flat;81,363632;17;4;1;deep;deuce;far;-0,716737;23,763422;out;deuce;near;1,289062;-2,04253;0,946777;cross court;In;false;06:30:15;627,469971
+Rasmus Kopperud Riis;6;in_play;Forehand;Topspin;71,96505;17;4;1;deep;ad;near;-2,715877;3,493766;out;deuce;far;-0,63623;24,896091;1,296875;down the line;In;false;06:30:16;629,140015
+Rikard Rykkvin;7;in_play;Backhand;Topspin;77,156273;17;4;1;short;ad;far;1,223044;18,261066;out;ad;near;-2,359375;-0,909717;1,238281;cross court;In;false;06:30:18;630,530029
+Rasmus Kopperud Riis;8;in_play;Backhand;Flat;99,308411;17;4;1;deep;deuce;near;3,724215;2,637763;deep;ad;far;2,488281;23,708591;1,414062;down the line;In;false;06:30:20;632,340027
+Rikard Rykkvin;9;in_play;Forehand;Topspin;64,177643;17;4;1;out;ad_alley;far;4,380082;26,903114;out;deuce;near;3,785156;-2,440967;0,972168;down the line;Out;false;06:30:21;633,640015
+Rikard Rykkvin;1;first_serve;Serve;Flat;106,849609;18;4;1;short;deuce;far;-2,506961;18,20319;deep;deuce;near;0,850586;1,316845;2,359375;out wide;In;false;06:30:43;655,710022
+Rasmus Kopperud Riis;2;first_return;Forehand;Flat;68,297287;18;4;1;deep;deuce;near;3,815162;1,452357;deep;deuce;far;-3,535156;24,239841;1,353516;cross court;In;false;06:30:44;656,849976
+Rikard Rykkvin;3;serve_plus_one;Forehand;Flat;55,145302;18;4;1;short;deuce_alley;far;-4,831694;18,259466;out;deuce;near;2,761719;-0,440967;0,627441;down the line;Out;false;06:30:46;658,380005
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Slice;55,744781;18;4;1;deep;ad;near;-0,842688;2,465226;deep;deuce_alley;far;-4,375;22,239841;2,480469;down the line;In;false;06:30:49;661,450012
+Rikard Rykkvin;1;first_serve;Serve;Slice;116,163017;19;4;1;short;ad;far;1,547727;17,35899;deep;ad;near;-1,791016;-0,04253;2,363281;down the T;In;false;06:31:00;673,219971
+Rasmus Kopperud Riis;2;first_return;Forehand;Topspin;81,340088;19;4;1;deep;deuce;near;0,56034;2,962662;out;ad;far;2,150391;25,239841;1,422852;inside in;In;false;06:31:02;674,48999
+Rikard Rykkvin;3;serve_plus_one;Forehand;Topspin;81,356079;19;4;1;deep;ad;far;1,890719;19,150963;out;deuce;near;0,297119;-1,409717;1,171875;down the line;In;false;06:31:03;675,719971
+Rasmus Kopperud Riis;4;return_plus_one;Backhand;Flat;85,0112;19;4;1;short;ad;near;-1,871408;6,169376;out;ad;far;2,259766;25,271091;1,035156;cross court;In;false;06:31:05;677,419983
+Rikard Rykkvin;5;in_play;Backhand;Topspin;84,323654;19;4;1;out;ad_alley;far;4,395223;25,721699;out;ad;near;-2,587891;-0,339405;1,027344;down the line;Out;false;06:31:06;678,960022
+Rasmus Kopperud Riis;6;in_play;Backhand;Flat;65,780396;19;4;1;deep;ad;near;-2,266157;4,82861;out;ad;far;3,251953;25,458591;1,050781;cross court;In;false;06:31:08;680,419983
+Rikard Rykkvin;7;in_play;Backhand;Slice;53,915726;19;4;1;short;ad;far;2,727293;17,159523;deep;ad;near;-3,146484;1,20747;1,421875;cross court;In;false;06:31:09;682,26001
+Rasmus Kopperud Riis;8;in_play;Backhand;Slice;65,28302;19;4;1;deep;deuce;near;3,761879;4,165076;deep;ad;far;2,820312;19,755466;1,884766;down the line;In;false;06:31:11;684,26001
+Rikard Rykkvin;9;in_play;Forehand;Flat;58,160839;19;4;1;out;ad;far;0,77002;24,040405;deep;deuce;near;3,398438;-0,07378;0,556641;down the line;Out;false;06:31:13;685,630005
+Rasmus Kopperud Riis;0;none;Feed;Flat;30,662121;20;4;1;deep;deuce;near;2,779297;5,288858;short;deuce;far;-0,85791;15,364841;4,277344;---;In;false;06:31:21;693,76001
+Rikard Rykkvin;1;first_serve;Serve;Flat;110,972733;20;4;1;short;deuce;far;-1,312877;15,93804;deep;deuce;near;1,078125;0,23872;2,533203;down the T;In;false;06:31:32;705,070007
+Rasmus Kopperud Riis;2;first_return;Forehand;Topspin;57,769005;20;4;1;short;deuce;near;2,192115;7,455235;deep;deuce;far;-2,755859;24,208591;1,216797;cross court;In;false;06:31:33;706,299988
+Rikard Rykkvin;3;serve_plus_one;Forehand;Flat;97,173683;20;4;1;deep;deuce;far;-2,311058;19,611948;deep;deuce;near;3,220703;0,55122;0,674805;cross court;In;false;06:31:36;708,400024
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Topspin;95,773155;20;4;1;deep;ad;near;-2,856475;4,449944;out;deuce;far;-3,828125;24,771091;1,320312;down the line;In;false;06:31:37;709,77002
+Rikard Rykkvin;5;in_play;Backhand;Flat;40,662685;20;4;1;short;ad;near;-2,349609;6,011719;deep;ad;near;-2,994141;-0,120655;1,136719;cross court;Net;false;06:31:38;711,140015
+Rikard Rykkvin;1;first_serve;Serve;Slice;107,157211;21;4;1;short;ad;far;1,803389;18,247282;deep;ad;near;-1,446289;0,309033;2,431641;down the T;In;false;06:31:56;728,47998
+Rasmus Kopperud Riis;2;first_return;Forehand;Flat;73,601036;21;4;1;deep;deuce;near;0,754372;4,324909;out;ad;far;2,695312;25,614841;1,231445;inside in;In;false;06:31:57;729,679993
+Rikard Rykkvin;3;serve_plus_one;Forehand;Flat;86,920929;21;4;1;deep;ad_alley;far;4,292142;22,383112;out;deuce;near;0,412598;-0,933155;1,362305;down the line;Out;false;06:31:58;731,150024
+Rikard Rykkvin;0;none;Feed;Flat;40,418251;22;5;1;short;ad;far;1,752689;16,289541;deep;deuce;near;1,135742;2,941845;1,441406;---;In;false;06:32:02;735,049988
+Rikard Rykkvin;1;none;Feed;Flat;27,923134;22;5;1;short;ad;far;1,834705;17,899345;short;deuce;near;2,15625;11,66068;1,494141;---;In;false;06:32:04;736,97998
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;151,742004;22;5;1;short;deuce;near;2,04833;6,963212;deep;deuce;far;-0,549805;23,552341;2,382812;down the T;In;false;06:32:29;761,690002
+Rikard Rykkvin;2;first_return;Forehand;Slice;78,916451;22;5;1;short;ad;far;2,111996;17,157791;out;deuce;near;3,566406;-0,753467;1,139648;down the line;In;false;06:32:30;762,590027
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;110,556595;23;5;1;deep;ad;near;-3,092943;3,519701;deep;ad;far;0,301514;23,715714;2,517578;out wide;Out;false;06:32:47;779,700012
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;102,488335;23;5;1;short;ad;near;-3,043254;6,179232;deep;ad;far;0,549805;23,849216;2,439453;out wide;In;false;06:32:54;786,340027
+Rikard Rykkvin;2;second_return;Forehand;Topspin;85,424553;23;5;1;deep;ad;far;0,521202;23,74246;out;ad;near;-3,316406;-0,581592;1,384766;inside out;In;false;06:32:55;787,5
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Flat;74,576202;23;5;1;deep;deuce;near;1,096591;2,922181;deep;ad;far;0,694824;23,255466;0,920898;inside in;In;false;06:32:56;788,840027
+Rikard Rykkvin;4;return_plus_one;Forehand;Topspin;59,529556;23;5;1;short;deuce;near;2,638672;11,882812;out;deuce;near;1,099609;-0,651905;1,158203;cross court;Net;false;06:32:57;790,27002
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;113,766365;24;5;1;deep;deuce;near;3,254214;3,899314;deep;deuce;far;-0,479248;23,567966;2,320312;out wide;Out;false;06:33:11;803,539978
+Rikard Rykkvin;1;none;Forehand;Topspin;63,576672;24;5;1;deep;deuce;far;-2,834703;20,894192;out;deuce_alley;near;4,796875;-1,714405;0,936035;down the line;In;false;06:33:12;804,51001
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;100,083916;24;5;1;short;deuce;near;2,577193;8,052502;deep;deuce;far;-0,223145;22,583591;2,417969;out wide;In;false;06:33:18;810,75
+Rikard Rykkvin;2;second_return;Forehand;Topspin;89,046188;24;5;1;deep;deuce;far;-2,55207;22,823442;out;deuce;near;2,787109;-0,839405;1,314453;cross court;In;false;06:33:19;811,710022
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Topspin;90,309425;24;5;1;deep;ad;near;-1,629611;4,481908;out;deuce;far;-3,125;24,427341;1,408203;down the line;In;false;06:33:20;813,309998
+Rikard Rykkvin;4;return_plus_one;Backhand;Topspin;72,001106;24;5;1;deep;ad;far;3,257437;20,305033;out;ad;near;-1,544922;-0,659717;1,019531;cross court;In;false;06:33:22;814,47998
+Rasmus Kopperud Riis;5;in_play;Backhand;Flat;96,357315;24;5;1;deep;ad;near;-2,023866;2,128517;out;ad;far;3,640625;25,349216;0,895996;cross court;In;false;06:33:24;816,51001
+Rikard Rykkvin;6;in_play;Backhand;Topspin;86,097733;24;5;1;deep;deuce;far;-4,010417;23,749004;out;ad;near;-2,318359;-0,956592;1,054688;down the line;In;false;06:33:25;817,719971
+Rasmus Kopperud Riis;7;in_play;Forehand;Slice;52,715313;24;5;1;deep;ad;near;-1,231445;5,413097;out;deuce;far;-2,826172;25,427341;1,466797;down the line;In;false;06:33:27;819,419983
+Rikard Rykkvin;8;in_play;Forehand;Slice;59,640118;24;5;1;deep;deuce;far;-3,882743;20,735828;deep;ad;near;-1,083008;3,004345;1,65625;inside in;In;false;06:33:29;821,52002
+Rasmus Kopperud Riis;9;in_play;Forehand;Flat;86,684753;24;5;1;deep;deuce;near;3,822928;5,385371;out;deuce;far;-3,509766;24,708591;0,736328;cross court;In;false;06:33:30;823,320007
+Rikard Rykkvin;0;none;Feed;Flat;39,024517;25;5;1;out;ad_alley;far;4,655961;24,765493;short;deuce;near;0,205933;10,340282;1,290039;---;Out;false;06:33:43;835,719971
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;38,920376;25;5;1;short;deuce;far;-2,589844;12,015625;deep;ad;far;0,827637;24,052341;2,408203;out wide;Net;false;06:34:02;854,330017
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;159,443024;26;5;1;short;ad;near;-3,048315;8,026999;short;deuce;far;-1,447266;23,579506;1,070312;out wide;Out;false;06:34:17;870,140015
+Rikard Rykkvin;1;none;Forehand;Flat;87,601822;26;5;1;short;ad;far;1,842855;18,232548;out;ad;near;-2,529297;-1,378467;1,105469;inside out;In;false;06:34:18;870,669983
+Rasmus Kopperud Riis;2;none;Backhand;Flat;87,872208;26;5;1;deep;deuce;near;2,541958;2,599603;deep;ad;far;2,585938;23,614841;1,185547;down the line;In;false;06:34:19;872,27002
+Rikard Rykkvin;3;none;Forehand;Topspin;80,06842;26;5;1;short;ad_alley;far;5,393102;18,283339;out;deuce;near;2,167969;-1,065967;1,201172;down the line;Out;false;06:34:21;873,640015
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;195,680084;26;5;1;short;deuce;near;1,000977;7,203125;deep;deuce;far;-0,228638;23,766779;2,253906;down the T;In;false;06:34:36;889,309998
+Rikard Rykkvin;2;second_return;Backhand;Topspin;69,434555;26;5;1;short;ad;near;-1,610352;9,1875;out;deuce;near;2,199219;-1,183155;0,835938;inside in;Net;false;06:34:38;890,380005
+Rikard Rykkvin;1;first_serve;Serve;Flat;84,542274;27;6;1;short;ad;far;1,517578;16,828125;deep;deuce;far;1,575195;23,612988;1,792969;out wide;Net;false;06:35:43;955,640015
+Rikard Rykkvin;1;second_serve;Serve;Flat;117,701149;27;6;1;short;deuce;near;2,592335;7,823756;deep;deuce;far;-0,697266;22,677341;2,3125;out wide;In;false;06:35:49;961,97998
+Rasmus Kopperud Riis;2;second_return;Forehand;Flat;94,509834;27;6;1;deep;deuce;far;-1,710071;21,93021;out;deuce_alley;near;4,410156;-0,651905;1,044922;down the line;In;false;06:35:50;963,039978
+Rikard Rykkvin;3;serve_plus_one;Forehand;Topspin;58,740604;27;6;1;deep;deuce;near;2,684227;0,797018;deep;deuce;far;-2,126953;22,989841;1,010742;cross court;In;false;06:35:51;964,280029
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Topspin;71,101601;27;6;1;deep;deuce;far;-3,890625;20,40625;out;deuce;near;2,15625;-1,753467;1,452148;cross court;In;false;06:35:53;965,97998
+Rikard Rykkvin;1;first_serve;Serve;Flat;133,630508;28;6;1;short;ad;near;-3,904044;6,477097;deep;ad;far;1,317383;24,239841;2,626953;out wide;In;false;06:36:09;981,380005
+Rasmus Kopperud Riis;2;first_return;Backhand;Topspin;64,894875;28;6;1;deep;deuce;far;-2,163208;21,611441;deep;ad_alley;near;-5,261719;-0,081592;1,039062;down the line;In;false;06:36:09;982,289978
+Rikard Rykkvin;3;serve_plus_one;Forehand;Topspin;82,69191;28;6;1;deep;ad;near;-2,813335;0,808213;out;deuce;far;-1,080078;24,489841;1,123047;down the line;In;false;06:36:12;984,450012
+Rasmus Kopperud Riis;4;return_plus_one;Backhand;Topspin;76,719582;28;6;1;short;ad;far;2,526022;18,20639;out;ad;near;-2,560547;-1,058155;0,664551;cross court;In;false;06:36:13;985,690002
+Rikard Rykkvin;5;in_play;Backhand;Flat;50,081234;28;6;1;short;ad;near;-2,214844;8,703125;deep;ad;far;3,082031;23,677341;0,958008;cross court;In;false;06:36:14;987,25
+Rasmus Kopperud Riis;6;in_play;Backhand;Slice;75,522751;28;6;1;deep;deuce;far;-4,083739;23,772768;short;ad;near;-3,435547;6,078564;0,719727;down the line;In;false;06:36:16;989,190002
+Rikard Rykkvin;1;first_serve;Serve;Flat;107,150093;29;6;1;short;deuce;near;1,634379;8,237679;deep;deuce;far;-0,611328;22,911716;2,355469;down the T;In;false;06:36:36;1008,900024
+Rasmus Kopperud Riis;2;first_return;Forehand;Topspin;88,58773;29;6;1;short;deuce;far;-2,452551;18,263353;out;deuce;near;3,013672;-0,550342;1,180664;cross court;In;false;06:36:37;1009,960022
+Rikard Rykkvin;3;serve_plus_one;Forehand;Topspin;80,70723;29;6;1;deep;deuce;near;1,852989;1,118246;deep;deuce;far;-3,712891;23,974216;1,230469;cross court;In;false;06:36:38;1011,26001
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Topspin;100,049438;29;6;1;deep;ad_alley;far;4,823397;21,840164;deep;deuce;near;2,152344;0,652783;1,101562;down the line;Out;false;06:36:40;1012,599976
+Rikard Rykkvin;1;first_serve;Serve;Flat;91,541039;30;6;1;short;ad;near;-2,011719;7,824219;deep;ad;far;1,28418;23,583591;2,546875;down the T;In;false;06:37:01;1034,170044
+Rasmus Kopperud Riis;2;first_return;Forehand;Flat;83,940262;30;6;1;deep;deuce;far;-2,709237;19,820704;out;ad;near;-3,105469;-0,776905;1,074219;inside in;In;false;06:37:03;1035,640015
+Rikard Rykkvin;3;serve_plus_one;Forehand;Topspin;74,422768;30;6;1;deep;deuce;near;0,79006;0,992565;out;deuce;far;-2,0625;24,958591;1,285156;cross court;In;false;06:37:04;1037,280029
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Topspin;45,126644;30;6;1;short;ad;near;-1,751953;5,648626;out;deuce;near;0,743164;-0,737842;1,168945;down the line;Net;false;06:37:06;1038,73999
+Rikard Rykkvin;1;first_serve;Serve;Flat;99,104942;31;6;1;short;deuce;near;3,081326;6,128382;deep;deuce;far;-0,591797;23,177341;2,283203;out wide;In;false;06:37:19;1052,050049
+Rasmus Kopperud Riis;2;first_return;Forehand;Flat;85,416855;31;6;1;out;deuce;far;-3,005524;27,473848;out;deuce_alley;near;4,410156;-1,097217;1,486328;down the line;Out;false;06:37:20;1053,180054
+Rikard Rykkvin;3;serve_plus_one;Forehand;Topspin;53,986351;31;6;1;deep;ad;near;-1,427518;4,418028;deep;deuce;far;-2,246094;22,802341;1,833984;down the line;In;false;06:37:24;1056,579956
+Rikard Rykkvin;0;none;Feed;Flat;33,449589;32;7;1;deep;deuce;near;0,666992;5,402344;short;deuce;far;-0,216187;15,850965;6,730469;---;In;false;06:37:36;1068,920044
+Rikard Rykkvin;1;none;Feed;Flat;33,449589;32;7;1;out;deuce;near;0,295384;-0,074579;deep;deuce_alley;far;-4,335938;22,614841;1,320312;---;Out;false;06:37:46;1078,430054
+Rasmus Kopperud Riis;1;first_serve;Serve;Slice;143,429688;32;7;1;short;deuce;far;-1,468232;18,234118;deep;deuce;near;0,741211;0,285595;2,480469;down the T;In;false;06:38:08;1100,439941
+Rikard Rykkvin;2;first_return;Backhand;Flat;67,240334;32;7;1;deep;ad;near;-2,339634;3,204726;deep;deuce;far;-2,0625;24,333591;1,318359;inside in;In;false;06:38:09;1101,369995
+Rasmus Kopperud Riis;3;serve_plus_one;Backhand;Topspin;80,68869;32;7;1;deep;deuce;far;-0,062439;20;deep;ad;near;-2,443359;0,36372;1,244141;down the line;In;false;06:38:10;1102,939941
+Rikard Rykkvin;4;return_plus_one;Forehand;Topspin;55,823174;32;7;1;short;ad;near;-3,157496;6,700085;deep;ad;far;0,189087;23,271091;1,475586;inside out;In;false;06:38:11;1104,099976
+Rasmus Kopperud Riis;5;in_play;Backhand;Flat;79,936493;32;7;1;deep;ad;far;1,400404;22,391792;out;ad;near;-3,939453;-0,378467;0,480469;cross court;In;false;06:38:13;1106,170044
+Rikard Rykkvin;6;in_play;Forehand;Topspin;70,364342;32;7;1;short;ad;far;2,255133;12,851562;out;ad;far;2,089844;26,552341;1,146484;inside out;Net;false;06:38:15;1108,069946
+Rikard Rykkvin;0;none;Feed;Flat;30,662121;33;7;1;out;deuce;near;0,301758;-0,580141;short;deuce;far;-0,542969;16,099216;3,441406;---;Out;false;06:38:23;1115,839966
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;125,358467;33;7;1;short;ad;far;2,95065;17,843666;deep;ad;near;-0,549805;0,160595;2,439453;out wide;In;false;06:38:32;1124,849976
+Rikard Rykkvin;2;first_return;Backhand;Flat;64,673973;33;7;1;deep;ad;near;-1,751302;0,833371;deep;ad;far;4,0625;24,083591;1,251953;cross court;In;false;06:38:33;1125,849976
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Flat;70,022072;33;7;1;deep;deuce;far;-1,811563;23,730053;out;ad;near;-1,567383;-0,190967;0,939453;inside in;In;false;06:38:35;1127,47998
+Rikard Rykkvin;4;return_plus_one;Forehand;Flat;59,569714;33;7;1;short;deuce;near;0,79938;7,045568;out;deuce;far;-1,461914;25,458591;1,308594;cross court;In;false;06:38:37;1129,609985
+Rasmus Kopperud Riis;5;in_play;Forehand;Flat;111,625412;33;7;1;out;deuce_alley;far;-5,434588;26,899525;out;deuce;near;0,983887;-0,269092;1,576172;down the line;Out;false;06:38:39;1131,52002
+Rasmus Kopperud Riis;1;first_serve;Serve;Slice;107,929207;34;7;1;short;deuce;far;-0,702446;16,905403;deep;deuce;near;0,991699;0,58247;2,423828;down the T;In;false;06:38:51;1143,75
+Rikard Rykkvin;1;none;Backhand;Topspin;75,841843;34;7;1;out;ad;near;-0,790037;-0,56258;out;deuce;far;-1,638672;25,224216;1,019531;inside in;Out;false;06:38:52;1145,050049
+Rasmus Kopperud Riis;1;second_serve;Serve;Slice;115,683327;34;7;1;deep;deuce;far;-3,171206;19,945419;deep;deuce;near;0,980469;0,652783;2,470703;out wide;Out;false;06:39:00;1153,119995
+Rikard Rykkvin;2;second_return;Forehand;Topspin;69,159904;34;7;1;out;deuce;near;0,1754;-1,390479;out;deuce_alley;far;-4,167969;24,896091;1,351562;down the line;Out;false;06:39:01;1154,189941
+Rasmus Kopperud Riis;1;first_serve;Serve;Slice;125,794769;35;7;1;short;ad;far;1,315605;17,680487;deep;ad;near;0,042267;0,212986;2,394531;down the T;In;false;06:39:22;1175,170044
+Rikard Rykkvin;2;first_return;Forehand;Topspin;71,189629;35;7;1;short;deuce;near;1,968652;7,280602;out;ad;far;2,095703;26,114841;1,273438;inside in;In;false;06:39:23;1176,199951
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Topspin;110,463074;35;7;1;deep;deuce;far;-1,867526;19,930786;deep;deuce;near;1,729492;2,48872;0,888184;cross court;In;false;06:39:25;1177,900024
+Rikard Rykkvin;4;return_plus_one;Forehand;Flat;48,79657;35;7;1;short;deuce;far;-0,91748;12,109375;out;deuce;far;-2,828125;24,567966;1,24707;cross court;Net;false;06:39:26;1179,040039
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;141,908463;36;7;1;short;deuce;far;-1,100575;18,035238;deep;deuce;near;0,975586;0,26997;2,466797;down the T;In;false;06:39:40;1192,369995
+Rikard Rykkvin;2;first_return;Backhand;Topspin;67,385567;36;7;1;deep;deuce;near;0,051979;5,413097;deep;deuce;far;-1,550781;24,255466;1,138672;inside out;In;false;06:39:40;1193,27002
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Topspin;93,437737;36;7;1;deep;ad;far;3,334298;23,724886;deep;deuce;near;0,425049;1,629345;1,000977;down the line;In;false;06:39:42;1194,880005
+Rikard Rykkvin;4;return_plus_one;Backhand;Slice;55,485722;36;7;1;deep;deuce;near;2,356588;0,447294;out;ad;far;3,005859;25,833591;1,330078;down the line;In;false;06:39:43;1196,079956
+Rasmus Kopperud Riis;5;in_play;Backhand;Topspin;63,699203;36;7;1;deep;deuce;far;-0,847168;22,5;out;deuce;near;1,450195;-0,784717;1,798828;inside out;In;false;06:39:47;1199,579956
+Rikard Rykkvin;6;in_play;Forehand;Flat;85,609055;36;7;1;short;deuce;near;0,452831;6,184856;deep;deuce;far;-1,040039;24,208591;0,519531;cross court;In;false;06:39:48;1201,310059
+Rasmus Kopperud Riis;7;in_play;Forehand;Topspin;79,001167;36;7;1;deep;deuce;far;-1,373047;20,8125;deep;deuce;near;0,556152;1,535595;1,508789;cross court;In;false;06:39:50;1202,550049
+Rikard Rykkvin;8;in_play;Forehand;Flat;58,600861;36;7;1;short;deuce;far;-1,058594;13,40625;deep;deuce;far;-1,202148;22,989841;0,728516;cross court;Net;false;06:39:51;1203,75
+Rikard Rykkvin;1;first_serve;Serve;Slice;96,482307;37;8;1;deep;deuce;far;-3,132522;18,309105;deep;deuce;near;0,886719;0,67622;2,511719;out wide;Out;false;06:41:14;1286,810059
+Rasmus Kopperud Riis;2;first_return;Forehand;Flat;94,777191;37;8;1;short;deuce;near;2,451891;6,674739;deep;deuce;far;-2,949219;23,364841;1,415039;cross court;In;false;06:41:15;1288,02002
+Rikard Rykkvin;3;serve_plus_one;Forehand;Topspin;91,794937;37;8;1;deep;ad;far;1,348633;20,15625;deep;deuce;near;3,826172;0,043408;0,766113;down the line;In;false;06:41:16;1289,180054
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Topspin;88,411369;37;8;1;deep;ad;near;-3,504506;1,5938;deep;ad;far;0,387939;23,146091;0,925781;inside out;In;false;06:41:18;1290,52002
+Rikard Rykkvin;1;first_serve;Serve;Slice;124,767227;38;8;1;deep;ad;far;1,840091;18,661951;out;ad;near;-1,40625;-0,128467;2,453125;down the T;Out;false;06:41:34;1306,689941
+Rasmus Kopperud Riis;2;first_return;Forehand;Topspin;72,358551;38;8;1;deep;deuce;near;0,296349;2,426957;deep;ad;far;2,447266;23,958591;1,353516;inside in;In;false;06:41:35;1307,689941
+Rikard Rykkvin;3;serve_plus_one;Forehand;Flat;70,824417;38;8;1;out;ad;far;0,892578;24,390625;out;ad;near;-0,03302;-0,901905;1,100586;inside out;Out;false;06:41:36;1308,98999
+Rasmus Kopperud Riis;0;none;Feed;Flat;32,055855;39;8;1;deep;ad;far;0,512695;18,984375;deep;ad;far;0,598145;21,239841;2,296875;---;Net;false;06:41:39;1312,329956
+Rikard Rykkvin;1;first_serve;Serve;Flat;114,91452;39;8;1;short;deuce;far;-1,246444;17,743925;deep;deuce;near;1,053711;0,387158;2,535156;down the T;In;false;06:41:50;1322,530029
+Rasmus Kopperud Riis;2;first_return;Backhand;Flat;66,400116;39;8;1;short;ad;far;1,844727;13,234375;deep;deuce;far;-2,300781;23,224216;1,642578;inside in;Net;false;06:41:51;1323,859985
+Rikard Rykkvin;1;first_serve;Serve;Flat;97,646889;40;8;1;short;ad;far;2,704847;17,82538;deep;ad;near;-1,260742;-0,050342;2,333984;out wide;In;false;06:42:03;1335,900024
+Rasmus Kopperud Riis;2;first_return;Forehand;Topspin;63,100452;40;8;1;deep;deuce;near;2,424057;3,777428;out;ad;far;3,539062;26,364841;1,236328;inside in;In;false;06:42:04;1337,199951
+Rikard Rykkvin;3;serve_plus_one;Forehand;Flat;76,167221;40;8;1;deep;deuce;far;-1,482119;20,62928;out;deuce;near;1,49707;-0,300342;1,457031;cross court;In;false;06:42:06;1338,800049
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Topspin;75,499046;40;8;1;deep;deuce;near;2,447266;5,445751;out;deuce;far;-2,363281;25,521091;1,166016;cross court;In;false;06:42:08;1340,640015
+Rikard Rykkvin;5;in_play;Forehand;Topspin;83,606659;40;8;1;short;ad;far;0,564873;16,94614;out;deuce;near;3,470703;-1,222217;1,094727;down the line;In;false;06:42:09;1342
+Rasmus Kopperud Riis;6;in_play;Forehand;Flat;83,311401;40;8;1;deep;ad;near;-2,207031;0,222108;out;deuce;far;-0,704102;25,802341;0,658691;down the line;In;false;06:42:11;1343,51001
+Rikard Rykkvin;1;first_serve;Serve;Slice;126,669922;41;8;1;deep;deuce;far;-2,129122;22,455017;deep;deuce;near;0,58252;-0,187263;2,416016;down the T;Out;false;06:42:28;1361,180054
+Rasmus Kopperud Riis;1;none;Forehand;Topspin;43,669777;41;8;1;short;deuce;near;1,834563;11,442488;deep;deuce;far;-2,169922;23,739841;1,623047;cross court;In;false;06:42:29;1362,280029
+Rikard Rykkvin;1;second_serve;Serve;Flat;90,495964;41;8;1;short;ad;far;0,60239;16,95134;deep;deuce;near;0,693359;0,855908;2,494141;down the T;Out;false;06:42:41;1373,849976
+Rikard Rykkvin;1;first_serve;Serve;Slice;95,212204;42;8;1;short;ad;far;2,116185;18,261843;deep;ad;near;-1,893555;0,012158;2,455078;down the T;In;false;06:43:05;1397,72998
+Rasmus Kopperud Riis;2;first_return;Forehand;Topspin;80,009102;42;8;1;deep;deuce;near;3,694752;1,707206;out;ad;far;2,888672;25,083591;1,662109;inside in;In;false;06:43:06;1399,060059
+Rasmus Kopperud Riis;1;first_serve;Serve;Slice;122,272415;43;9;2;short;deuce;far;-1,624951;16,426659;deep;deuce;near;1,016602;0,199658;2,59375;down the T;In;false;06:44:53;1505,709961
+Rikard Rykkvin;2;first_return;Forehand;Topspin;51,143852;43;9;2;short;ad;near;-3,389987;8,484324;deep;deuce;far;-3,345703;24,192966;1,371094;down the line;In;false;06:44:54;1506,709961
+Rasmus Kopperud Riis;3;serve_plus_one;Backhand;Slice;64,056465;43;9;2;deep;ad_alley;far;4,912627;23,63114;deep;ad;near;-3,505859;2,20747;0,71875;down the line;Out;false;06:44:56;1508,689941
+Rikard Rykkvin;4;return_plus_one;Backhand;Flat;81,994415;43;9;2;out;ad;near;-3,024696;-1,389127;deep;ad;far;3,712891;23,114841;1,714844;cross court;Out;false;06:44:58;1510,810059
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;91,928146;44;9;2;deep;ad;far;0,824687;18,369608;deep;ad;near;-0,092285;0,393609;2,373047;down the T;Out;false;06:45:22;1535,189941
+Rikard Rykkvin;1;none;Forehand;Flat;54,013741;44;9;2;short;deuce;far;-0,632812;15,609375;out;ad;far;0,613281;25,364841;1,238281;inside in;Net;false;06:45:24;1536,420044
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;101,832024;44;9;2;deep;ad;far;1,786866;19,424423;deep;ad;near;0,121033;1,30122;2,46875;down the T;Out;false;06:45:32;1544,589966
+Rikard Rykkvin;2;second_return;Forehand;Flat;44,956425;44;9;2;short;deuce;far;-2,087891;18,226231;out;ad;far;1,445312;24,755466;1,578125;inside in;Net;false;06:45:33;1545,859985
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;118,946365;45;9;2;deep;deuce;far;-1,426004;18,867916;deep;deuce;near;0,694336;0,846746;2,486328;down the T;Out;false;06:45:52;1564,77002
+Rikard Rykkvin;2;first_return;Backhand;Topspin;69,988441;45;9;2;short;deuce;near;2,021689;7,404419;deep;deuce;far;-2,019531;24,208591;1,204102;inside out;In;false;06:45:53;1565,829956
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Topspin;91,615341;45;9;2;deep;ad;far;3,076231;23,701097;deep;deuce;near;2,634766;1,098095;1,037109;down the line;In;false;06:45:54;1567,199951
+Rikard Rykkvin;4;return_plus_one;Backhand;Slice;39,224941;45;9;2;deep;ad;far;2,884766;20,53125;out;ad;far;2,898438;24,771091;0,86377;cross court;Net;false;06:45:56;1568,530029
+Rikard Rykkvin;0;none;Feed;Flat;30,662121;46;9;2;out;ad;near;-1,019947;-0,326397;deep;ad;far;1,791992;20,677341;2,583984;---;Out;false;06:46:06;1578,569946
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;121,490463;46;9;2;short;ad;far;2,041515;16,822742;deep;ad;near;-0,147705;0,621533;2,335938;down the T;In;false;06:46:18;1590,709961
+Rikard Rykkvin;2;first_return;Forehand;Topspin;66,293968;46;9;2;deep;deuce;near;2,397907;2,214954;out;ad;far;3,044922;26,052341;1,086914;inside in;In;false;06:46:19;1591,709961
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Topspin;69,903618;46;9;2;short;deuce;far;-2,854373;17,486473;deep;deuce;near;2,207031;0,074658;1,337891;cross court;In;false;06:46:21;1593,410034
+Rikard Rykkvin;4;return_plus_one;Forehand;Flat;87,584274;46;9;2;deep;deuce;near;2,278509;5,385371;out;deuce_alley;far;-4,277344;26,052341;0,851562;down the line;In;false;06:46:23;1595,380005
+Rasmus Kopperud Riis;5;in_play;Forehand;Topspin;95,156975;46;9;2;deep;ad;far;4,08205;21,547665;out;deuce;near;2,496094;-0,284717;0,958008;down the line;In;false;06:46:24;1596,609985
+Rikard Rykkvin;6;in_play;Backhand;Flat;53,137688;46;9;2;deep;deuce_alley;near;4,570312;4,112457;out;ad;far;2,847656;27,067966;0,829102;down the line;Out;false;06:46:25;1598,050049
+Rasmus Kopperud Riis;1;first_serve;Serve;Slice;136,327332;47;9;2;deep;deuce;far;-2,864916;19,464428;deep;deuce;near;0,947754;0,191845;2,59375;out wide;Out;false;06:46:42;1614,550049
+Rikard Rykkvin;2;first_return;Forehand;Slice;56,003975;47;9;2;deep;ad;near;-0,299725;2,032571;deep;deuce;far;-3,822266;23,771091;1,580078;down the line;In;false;06:46:43;1615,449951
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Topspin;88,46978;47;9;2;deep;ad;far;3,914042;23,773592;out;ad;near;-0,163208;-2,206592;1,345703;inside out;In;false;06:46:45;1617,52002
+Rikard Rykkvin;4;return_plus_one;Backhand;Flat;46,016396;47;9;2;short;ad;near;-3,57453;10,641839;out;ad;far;2,957031;25,661716;0,69043;cross court;In;false;06:46:46;1618,819946
+Rikard Rykkvin;5;in_play;Forehand;Slice;101,951782;47;9;2;deep;deuce;far;-1,325195;19,015625;deep;deuce;far;-1,683594;24,130466;1,542969;cross court;Net;false;06:46:51;1623,359985
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;61,341438;48;9;2;short;deuce;near;1,969727;11,734375;deep;ad;near;0,020187;0,285595;2,367188;out wide;Net;false;06:47:07;1639,930054
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;96,388802;48;9;2;short;ad;far;2,199798;16,405521;deep;ad;near;-0,388916;0,277783;2,337891;out wide;In;false;06:47:13;1645,829956
+Rikard Rykkvin;2;none;Forehand;Slice;60,658207;48;9;2;short;center_line;near;0,024231;9,370267;out;ad;far;2,710938;25,958591;0,655762;inside in;In;false;06:47:15;1647,369995
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;173,937851;48;9;2;short;ad;far;2,351418;16,824177;short;ad;near;0,791504;0,09323;1,957031;out wide;In;false;06:47:24;1656,410034
+Rikard Rykkvin;2;second_return;Forehand;Topspin;93,767876;48;9;2;deep;deuce_alley;near;4,90256;1,274855;out;ad;far;3,597656;25,364841;1,202148;inside in;Out;false;06:47:24;1657,310059
+Rikard Rykkvin;1;first_serve;Serve;Flat;54,615253;49;10;2;short;ad;near;-0,802246;6,477829;deep;deuce;near;0,691406;1,137158;2,472656;down the T;Net;false;06:48:06;1698,819946
+Rikard Rykkvin;1;second_serve;Serve;Flat;94,867973;49;10;2;short;deuce;far;-2,644759;17,921741;deep;deuce;near;0,695801;-0,386364;2,462891;out wide;In;false;06:48:21;1713,630005
+Rasmus Kopperud Riis;2;second_return;Forehand;Flat;93,289879;49;10;2;deep;deuce;near;0,297454;5,085056;deep;deuce;far;-3,984375;23,583591;1,685547;cross court;In;false;06:48:22;1715,099976
+Rikard Rykkvin;3;serve_plus_one;Forehand;Topspin;74,106171;49;10;2;deep;deuce;far;-0,935953;21,766752;out;deuce;near;0,898438;-0,38628;1,198242;cross court;In;false;06:48:23;1716,26001
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Flat;56,804665;49;10;2;short;ad;far;1,353516;13,617188;out;deuce;far;-1,244141;24,599216;1,261719;down the line;Net;false;06:48:25;1717,800049
+Rikard Rykkvin;0;none;Feed;Flat;39,222912;50;10;2;short;deuce;near;2,509766;11,046875;short;deuce;near;2,318359;6,121617;0,777832;---;Net;false;06:48:33;1725,900024
+Rikard Rykkvin;1;first_serve;Serve;Flat;102,177994;50;10;2;short;ad;far;3,998605;18,285524;deep;ad;near;-2,117188;0,074658;2,275391;out wide;In;false;06:48:50;1743,01001
+Rasmus Kopperud Riis;2;first_return;Backhand;Flat;65,624161;50;10;2;deep;deuce;near;2,36343;3,579816;deep;ad_alley;far;4,167969;23,896091;1,609375;down the line;In;false;06:48:52;1744,380005
+Rikard Rykkvin;3;serve_plus_one;Forehand;Topspin;72,615921;50;10;2;out;deuce;far;-3,236328;23,839348;out;deuce;near;1,645508;-1,847217;1,292969;cross court;Out;false;06:48:54;1746,380005
+Rikard Rykkvin;1;first_serve;Serve;Slice;117,311424;51;10;2;short;deuce;far;-0,661461;18,084032;deep;deuce;near;1,239258;1,36372;2,390625;down the T;In;false;06:49:07;1760,180054
+Rasmus Kopperud Riis;2;first_return;Backhand;Topspin;66,364014;51;10;2;short;deuce;near;1,807596;7,120233;deep;deuce;far;-1,628906;24,302341;1,302734;inside out;In;false;06:49:08;1761,219971
+Rikard Rykkvin;3;serve_plus_one;Forehand;Flat;104,651344;51;10;2;deep;ad;far;2,385519;23,199476;deep;deuce;near;2,457031;0,848095;0,841309;down the line;In;false;06:49:10;1763,02002
+Rasmus Kopperud Riis;4;return_plus_one;Backhand;Topspin;75,166672;51;10;2;out;ad;near;-2,966664;-0,929681;out;ad;far;2,146484;24,661716;0,789551;cross court;Out;false;06:49:11;1764,219971
+Rikard Rykkvin;1;first_serve;Serve;Flat;141,98494;52;10;2;short;ad;far;2,916194;18,286781;deep;ad;near;-1,151367;0,161412;2,066406;out wide;In;false;06:49:26;1778,459961
+Rasmus Kopperud Riis;2;first_return;Backhand;Topspin;49,253395;52;10;2;short;ad_alley;far;4,349212;11,9375;deep;ad;far;3,882812;23,458591;1,246094;down the line;Net;false;06:49:27;1779,560059
+Rikard Rykkvin;1;first_serve;Serve;Flat;131,805069;53;10;2;short;deuce;far;-1,503271;18,24823;deep;deuce;near;0,836426;0,629345;2,498047;down the T;In;false;06:49:37;1790,199951
+Rasmus Kopperud Riis;2;first_return;Forehand;Topspin;62,84621;53;10;2;deep;ad;near;-2,146834;3,209543;deep;deuce;far;-2,572266;22,927341;1,564453;down the line;In;false;06:49:38;1791,22998
+Rikard Rykkvin;3;serve_plus_one;Backhand;Topspin;54,762024;53;10;2;short;ad;near;-0,485596;5,901061;out;ad;near;-2,164062;-0,894092;1,231445;cross court;Net;false;06:49:40;1792,800049
+Rikard Rykkvin;1;first_serve;Serve;Flat;65,457153;54;10;2;short;deuce;near;1,130859;11,875;deep;ad;near;-1,796875;0,199658;2,373047;down the T;Net;false;06:49:57;1809,939941
+Rikard Rykkvin;1;second_serve;Serve;Slice;99,621193;54;10;2;short;ad;far;2,858899;18,285524;deep;ad;near;-1,741211;0,160595;2,427734;out wide;In;false;06:50:03;1816,01001
+Rasmus Kopperud Riis;2;second_return;Forehand;Topspin;80,058441;54;10;2;short;ad;near;-0,783441;6,611516;out;ad;far;3,298828;24,614841;1,691406;inside out;In;false;06:50:04;1817,23999
+Rikard Rykkvin;3;serve_plus_one;Backhand;Topspin;66,056335;54;10;2;short;ad;far;1,178327;17,189547;deep;ad;near;-2,189453;0,621533;0,786133;cross court;In;false;06:50:06;1818,540039
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Flat;104,202225;54;10;2;deep;deuce;near;2,573923;0,804723;out;ad;far;1,969727;24,755466;0,525391;inside in;In;false;06:50:08;1820,469971
+Rikard Rykkvin;1;first_serve;Serve;Flat;86,786194;55;10;2;deep;deuce;far;-1,910156;18,416756;deep;deuce;near;1,025391;0,934033;2,429688;down the T;Out;false;06:50:28;1840,920044
+Rasmus Kopperud Riis;1;none;Forehand;Flat;75,348129;55;10;2;short;ad;near;-1,494989;8,11237;deep;deuce;far;-2,578125;23,364841;1,238281;down the line;In;false;06:50:29;1842,079956
+Rikard Rykkvin;1;second_serve;Serve;Slice;48,344826;55;10;2;short;ad;near;-1,026367;11,578125;deep;deuce;near;1,208984;0,58247;2,539062;down the T;Net;false;06:50:35;1847,719971
+Rasmus Kopperud Riis;0;none;Backhand;Flat;52,462021;56;10;2;short;ad;far;3,029297;16,580736;deep;ad_alley;far;4,910156;24,364841;0,734375;down the line;Net;false;06:50:55;1867,959961
+Rikard Rykkvin;1;first_serve;Serve;Flat;113,014961;57;10;2;short;deuce;far;-1,976982;18,131519;deep;deuce;near;0,565918;0,073628;2,472656;down the T;In;false;06:51:06;1878,630005
+Rasmus Kopperud Riis;2;first_return;Forehand;Flat;75,868874;57;10;2;deep;deuce;near;3,994831;5,38003;deep;deuce;far;-3,064453;23,521091;1,392578;cross court;In;false;06:51:07;1879,869995
+Rikard Rykkvin;3;serve_plus_one;Forehand;Topspin;82,529633;57;10;2;short;ad;far;1,803645;17,932159;out;deuce;near;3,158203;-0,183155;1,321289;down the line;In;false;06:51:08;1881,170044
+Rasmus Kopperud Riis;4;return_plus_one;Backhand;Flat;69,8377;57;10;2;short;deuce;far;-0,730469;12,390625;out;ad;far;0,620605;25,880466;0,724121;down the line;Net;false;06:51:10;1882,829956
+Rikard Rykkvin;1;first_serve;Serve;Slice;54,112602;58;10;2;short;deuce;near;1,244141;7,310303;deep;ad;near;-1,469727;1,480908;2,25;out wide;Net;false;06:51:30;1903,310059
+Rikard Rykkvin;1;second_serve;Serve;Flat;75,38681;58;10;2;short;ad_alley;far;4,119014;16,580566;deep;ad;near;-1,516602;0,230908;2,466797;out wide;Out;false;06:51:39;1911,47998
+Rasmus Kopperud Riis;2;second_return;Backhand;Slice;56,90736;58;10;2;short;deuce;near;2,005342;6,588331;out;ad_alley;far;4,574219;25,427341;1,570312;down the line;In;false;06:51:40;1913,280029
+Rikard Rykkvin;1;first_serve;Serve;Slice;107,191498;59;10;2;short;deuce;far;-3,871203;18,183741;deep;deuce;near;0,889648;0,574658;2,654297;out wide;In;false;06:52:08;1940,390015
+Rasmus Kopperud Riis;1;none;Forehand;Flat;47,628464;59;10;2;short;ad;far;1,130859;16,179838;out;deuce_out;far;-5,640625;25,614841;1,107422;down the line;Net;false;06:52:09;1941,530029
+Rikard Rykkvin;1;second_serve;Serve;Slice;94,617432;59;10;2;short;deuce;far;-2,863645;18,151127;short;deuce;near;0,806152;-0,044706;2,71875;out wide;In;false;06:52:16;1949,060059
+Rasmus Kopperud Riis;2;second_return;Forehand;Flat;76,888405;59;10;2;deep;deuce;near;2,467354;0,313037;deep;deuce;far;-4,113281;23,458591;1,513672;cross court;In;false;06:52:18;1950,459961
+Rikard Rykkvin;3;serve_plus_one;Forehand;Flat;65,92717;59;10;2;deep;ad;far;2,268284;23,75778;out;deuce;near;1,960938;-0,558155;0,544922;down the line;In;false;06:52:19;1951,76001
+Rasmus Kopperud Riis;4;return_plus_one;Backhand;Flat;111,331947;59;10;2;deep;ad;near;-1,026367;5,046875;deep;ad;far;2,060547;24,364841;0,868652;cross court;In;false;06:52:21;1954,170044
+Rikard Rykkvin;5;in_play;Backhand;Topspin;62,282272;59;10;2;short;ad;far;1,42739;17,504549;out;ad;near;-2,103516;-0,815967;0,916992;cross court;In;false;06:52:23;1955,400024
+Rasmus Kopperud Riis;6;in_play;Forehand;Topspin;119,978104;59;10;2;deep;deuce;near;2,570846;5,433112;deep;ad;far;2,244141;24,317966;1,115234;inside in;In;false;06:52:25;1957,400024
+Rikard Rykkvin;1;first_serve;Serve;Flat;57,347805;60;10;2;short;deuce;near;1,095703;6,029926;deep;ad;near;-1,444336;1,23872;2,136719;out wide;Net;false;06:52:52;1984,780029
+Rikard Rykkvin;1;second_serve;Serve;Slice;66,682396;60;10;2;short;ad_out;far;7,099461;15,92335;out;ad;near;-2,074219;-0,206592;2,294922;out wide;Out;false;06:52:59;1991,380005
+Rikard Rykkvin;0;none;Feed;Flat;39,024517;61;11;2;short;deuce;far;-1,265625;15,59375;deep;ad;near;-2,669922;2,090283;1,03125;---;In;false;06:53:05;1997,349976
+Rikard Rykkvin;1;none;Feed;Flat;33,449589;61;11;2;deep;deuce;far;-0,205039;20,984823;deep;deuce;near;4,089844;4,609814;1,027344;---;In;false;06:53:11;2003,819946
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;85,130051;61;11;2;short;deuce;near;3,275079;5,943363;deep;deuce;far;-0,679199;22,833591;2,369141;out wide;In;false;06:53:37;2030,26001
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;149,581467;61;11;2;short;deuce;near;2,442192;7,680195;deep;deuce;far;-0,344238;23,990744;2,417969;out wide;In;false;06:53:46;2038,900024
+Rikard Rykkvin;2;second_return;Forehand;Flat;54,559193;61;11;2;short;deuce;near;0,349854;11,578125;out;deuce;near;3,929688;-0,870655;0,985352;cross court;Net;false;06:53:47;2039,869995
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;159,501328;62;11;2;deep;ad;near;-3,210699;4,187415;deep;ad;far;0,071777;23,067966;2,21875;out wide;Out;false;06:54:03;2055,77002
+Rikard Rykkvin;1;none;Backhand;Flat;54,96447;62;11;2;deep;deuce;far;-0,723145;20,40625;out;ad;near;-4,019531;-1,10503;1,115234;down the line;In;false;06:54:04;2056,679932
+Rasmus Kopperud Riis;1;second_serve;Serve;Kick;166,394348;62;11;2;deep;ad;near;-1,105469;4,105469;deep;ad;far;0,151489;24,052341;2,347656;down the T;Out;false;06:54:14;2066,709961
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;103,718887;63;11;2;short;deuce;near;4,05295;8,608688;deep;deuce;far;-0,450195;23,271091;2,417969;out wide;In;false;06:54:36;2088,98999
+Rikard Rykkvin;2;first_return;Forehand;Topspin;79,431641;63;11;2;short;ad;far;0,817871;16,25;out;deuce;near;3,966797;-0,222217;1,255859;down the line;In;false;06:54:37;2089,959961
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Topspin;87,456772;63;11;2;deep;ad_alley;near;-4,295349;2,765744;deep;deuce;far;-3,085938;24,349216;0,643555;down the line;Out;false;06:54:39;2092,159912
+Rikard Rykkvin;0;none;Feed;Flat;32,055855;64;11;2;deep;ad;far;0,540032;21,99276;short;deuce;near;1,162109;6,715367;1,004883;---;In;false;06:54:47;2099,76001
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;100,923897;64;11;2;short;ad;near;-1,635742;6,980469;deep;ad;far;0,317383;23,677341;2,513672;down the T;In;false;06:54:57;2109,659912
+Rikard Rykkvin;2;first_return;Forehand;Topspin;90,006783;64;11;2;deep;deuce;far;-0,433605;20,178953;out;ad;near;-1,648438;-2,003467;1,249023;inside in;In;false;06:54:58;2110,870117
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Flat;100,903503;64;11;2;deep;deuce;near;1,774414;5,300781;deep;ad;far;0,120056;24,349216;1,037109;inside in;In;false;06:55:00;2112,5
+Rikard Rykkvin;4;return_plus_one;Forehand;Topspin;78,437065;64;11;2;deep;ad;far;0,487549;20,53125;out;deuce;near;2,052734;-1,112842;0,857422;down the line;In;false;06:55:01;2113,629883
+Rasmus Kopperud Riis;5;in_play;Forehand;Topspin;67,890419;64;11;2;deep;ad;near;-0,852531;2,752252;deep;ad;far;0,275146;23,458591;1,091797;inside out;In;false;06:55:02;2114,969971
+Rikard Rykkvin;6;in_play;Forehand;Topspin;91,945236;64;11;2;short;ad;far;0,758868;16,914099;out;ad;near;-1,041016;-1,76128;1,304688;inside out;In;false;06:55:04;2116,370117
+Rasmus Kopperud Riis;7;in_play;Forehand;Flat;96,338867;64;11;2;short;ad_alley;near;-4,154219;5,83259;out;ad;far;1,081055;24,677341;0,928711;inside in;Out;false;06:55:05;2118,070068
+Rikard Rykkvin;8;in_play;Backhand;Slice;50,168343;64;11;2;short;deuce;near;2,927734;8,046875;out;ad_alley;near;-4,546875;-0,151905;0,751465;down the line;Net;false;06:55:07;2119,570068
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;138,516083;65;11;2;deep;deuce;near;2,709545;3,279942;deep;deuce;far;-0,762695;23,489841;2,390625;out wide;Out;false;06:55:35;2148,110107
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;117,882874;65;11;2;short;deuce;near;3,330444;8,473399;deep;deuce;far;-0,625488;23,177341;2,435547;out wide;In;false;06:55:46;2158,949951
+Rikard Rykkvin;2;second_return;Forehand;Flat;56,303596;65;11;2;short;deuce;near;1,186523;5,996119;out;deuce_alley;near;4,121094;-1,01128;0,880859;down the line;Net;false;06:55:47;2159,949951
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;117,979355;66;11;2;deep;ad;near;-1,436731;5,395665;deep;ad;far;0,533691;23,849216;2,453125;down the T;Out;false;06:56:03;2175,98999
+Rikard Rykkvin;1;none;Forehand;Flat;63,475269;66;11;2;out;ad;far;1,125;25,635046;out;ad;near;-1,625977;-1,831592;1,283203;inside out;Out;false;06:56:04;2177,060059
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;144,948212;66;11;2;short;deuce;far;-0,833008;12,46875;deep;ad;far;0,265625;22,630466;2,148438;down the T;Net;false;06:56:14;2186,629883
+Rikard Rykkvin;0;none;Feed;Flat;39,634289;67;11;2;deep;ad;far;0,530273;19,59375;short;deuce;near;0,217651;9,746617;0,757812;---;In;false;06:56:22;2195,300049
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;142,891541;67;11;2;deep;deuce;near;3,211906;5,384329;deep;deuce;far;-0,192627;23,561413;2,251953;out wide;Out;false;06:56:36;2208,73999
+Rikard Rykkvin;2;first_return;Forehand;Topspin;71,083206;67;11;2;deep;ad;far;0,814243;20,484921;out;deuce_alley;near;4,484375;-0,956592;1,087891;down the line;In;false;06:56:37;2209,610107
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Flat;78,650909;67;11;2;deep;deuce;near;2,512354;4,211806;deep;ad;far;0,706055;23,052341;2,910156;inside in;In;false;06:56:38;2211,310059
+Rikard Rykkvin;0;none;Feed;Flat;32,442242;68;11;2;deep;deuce;far;-0,002052;18,30114;short;ad;near;-0,056152;10,355992;1,364258;---;In;false;06:56:47;2219,709961
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;81,827446;68;11;2;short;deuce;far;-0,775391;12,539062;deep;ad;far;0,215088;23,146091;2,404297;down the T;Net;false;06:56:59;2232,02002
+Rasmus Kopperud Riis;1;second_serve;Serve;Flat;136,157684;68;11;2;short;ad;near;-0,415881;9,659928;deep;ad;far;0,29541;23,396091;2,478516;down the T;In;false;06:57:06;2238,790039
+Rikard Rykkvin;2;second_return;Forehand;Flat;77,28228;68;11;2;deep;ad;far;0,202562;23,550737;out;ad;near;-0,689941;-1,54253;1,213867;inside out;In;false;06:57:07;2239,850098
+Rasmus Kopperud Riis;3;serve_plus_one;Forehand;Topspin;82,497307;68;11;2;short;deuce;near;1,460906;6,095538;deep;ad;far;0,438721;22,786716;0,911621;inside in;In;false;06:57:08;2241,320068
+Rikard Rykkvin;4;return_plus_one;Forehand;Slice;50,671257;68;11;2;short;deuce;far;-1,143555;15,4375;deep;deuce;near;1,914062;1,14497;1,310547;cross court;In;false;06:57:10;2242,419922
+Rasmus Kopperud Riis;5;in_play;Volley;Flat;29,268389;68;11;2;deep;ad;near;-2,770822;5,320128;short;deuce;far;-1,143555;16,083591;2,105469;down the line;In;false;06:57:11;2243,719971
+Rikard Rykkvin;6;in_play;Backhand;Topspin;56,77597;68;11;2;short;deuce;far;-0,431641;16,5625;deep;ad;near;-3,117188;0,418408;0,858887;down the line;In;false;06:57:12;2244,919922
+Rasmus Kopperud Riis;7;in_play;Overhead;Flat;54,803772;68;11;2;short;ad;near;-0,67623;9,252426;short;deuce;far;-0,431641;17,208591;3,013672;---;In;false;06:57:13;2246,219971
+Rikard Rykkvin;8;in_play;Forehand;Topspin;71,120827;68;11;2;short;ad;far;0,867676;15,046875;deep;ad;near;-0,98877;0,066845;0,623535;inside out;In;false;06:57:15;2247,790039
+Rasmus Kopperud Riis;9;in_play;Backhand;Topspin;34,725334;68;11;2;short;ad;far;0,846191;12,296875;short;ad;far;0,867676;15,692966;1,427734;cross court;Net;false;06:57:16;2248,620117
+Rikard Rykkvin;0;none;Feed;Flat;30,335941;69;11;2;short;ad;far;1,00293;16,28125;short;deuce;near;1,985352;9,074742;1,935547;---;In;false;06:57:21;2254,129883
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;117,653046;69;11;2;short;deuce;near;2,5218;7,614397;deep;deuce;far;-0,586914;23,614841;2,482422;out wide;In;false;06:57:42;2274,830078
+Rikard Rykkvin;2;first_return;Forehand;Flat;66,646294;69;11;2;short;deuce;near;1,93457;11,835938;out;deuce_alley;near;4,210938;-1,206592;0,980469;down the line;Net;false;06:57:43;2275,969971
+Rasmus Kopperud Riis;1;first_serve;Serve;Flat;168,074997;70;11;2;deep;ad;near;-2,498578;5,473812;deep;ad;far;-0,026489;22,333591;2,378906;out wide;Out;false;06:57:54;2286,639893
+Rikard Rykkvin;2;first_return;Forehand;Topspin;59,097469;70;11;2;short;ad;far;1,996718;16,914555;out;ad;near;-2,654297;-1,565967;1,160156;inside out;In;false;06:57:55;2287,340088
+Rasmus Kopperud Riis;3;serve_plus_one;Backhand;Flat;100,003159;70;11;2;deep;deuce;near;3,487786;5,423974;deep;ad;far;2,958984;22,083591;1,310547;down the line;In;false;06:57:57;2289,469971
+Rikard Rykkvin;4;return_plus_one;Forehand;Flat;56,940968;70;11;2;short;ad;far;0,539062;18,1875;out;deuce;near;2,742188;-0,870655;0,713379;down the line;In;false;06:57:58;2290,540039
+Rasmus Kopperud Riis;5;in_play;Overhead;Flat;162,066345;70;11;2;short;deuce;near;1,952875;7,124465;short;ad;far;0,539062;18,833591;2,619141;---;In;false;06:57:59;2292,139893
+Rikard Rykkvin;6;in_play;Backhand;Topspin;100,348763;70;11;2;deep;deuce;near;0,436279;4,402344;out;deuce;near;1,163086;-3,32378;3,447266;inside out;Net;false;06:58:00;2293,139893
+Rikard Rykkvin;1;first_serve;Serve;Flat;72,487717;71;12;2;short;ad;far;2,244141;12,695312;deep;deuce;far;-0,979492;23,552341;2,408203;out wide;Net;false;06:58:45;2337,360107
+Rikard Rykkvin;1;second_serve;Serve;Flat;99,343674;71;12;2;deep;deuce_alley;near;4,306391;3,763285;deep;deuce;far;-0,497803;23,427341;2,308594;out wide;Out;false;06:59:00;2352,969971
+Rasmus Kopperud Riis;2;second_return;Forehand;Topspin;76,457657;71;12;2;deep;deuce_alley;far;-4,388755;22,027365;deep;deuce_alley;near;4,714844;0,152783;1,171875;cross court;Out;false;06:59:01;2354,030029
+Rikard Rykkvin;1;first_serve;Serve;Flat;122,476929;72;12;2;short;ad;near;-2,355286;6,753798;deep;ad;far;1,342773;23,896091;2,609375;out wide;In;false;06:59:12;2364,77002
+Rasmus Kopperud Riis;2;first_return;Forehand;Topspin;88,447762;72;12;2;short;ad;far;0,85488;18,260275;deep;ad;near;-3,289062;-0,081592;1,400391;inside out;In;false;06:59:13;2365,77002
+Rikard Rykkvin;3;serve_plus_one;Backhand;Flat;58,66576;72;12;2;deep;ad;near;-0,412125;5,083819;deep;ad;far;1,641602;23,552341;0,949219;cross court;In;false;06:59:14;2367,169922
+Rasmus Kopperud Riis;4;return_plus_one;Forehand;Topspin;114,130386;72;12;2;deep;deuce;far;-2,7745;23,210436;out;ad;near;-0,71582;-0,190967;1,175781;inside in;In;false;06:59:16;2368,540039
+Rikard Rykkvin;5;in_play;Forehand;Topspin;53,555828;72;12;2;deep;ad;near;-1,768555;2,484375;out;deuce;far;-2,644531;24,474216;0,967773;down the line;In;false;06:59:17;2369,679932
+Rasmus Kopperud Riis;6;in_play;Volley;Flat;30,662121;72;12;2;out;ad;far;1,749023;23,903154;deep;ad;near;-1,768555;2,355908;1,161133;cross court;Out;false;06:59:19;2371,610107
+Rikard Rykkvin;7;in_play;Backhand;Topspin;49,223469;72;12;2;deep;deuce;near;3,244141;4,953125;deep;ad;far;2,664062;23,677341;2,806641;down the line;In;false;06:59:20;2372,439941
+Rasmus Kopperud Riis;8;in_play;Overhead;Flat;30,051523;72;12;2;short;deuce;near;0,883301;5,54817;deep;deuce;near;3,244141;4,824657;3,076172;cross court;Net;false;06:59:22;2374,47998
+Rikard Rykkvin;1;first_serve;Serve;Flat;107,29628;73;12;2;short;deuce;near;3,25967;8,587031;deep;deuce;far;-0,749023;23,942966;2,396484;out wide;In;false;06:59:39;2392,120117
+Rasmus Kopperud Riis;2;first_return;Forehand;Topspin;80,910355;73;12;2;deep;ad;far;0,095276;19,9375;out;deuce;near;3,609375;-0,956592;1,189453;down the line;In;false;06:59:40;2393,090088
+Rikard Rykkvin;3;serve_plus_one;Forehand;Flat;56,418736;73;12;2;short;ad;far;0,799805;18,014088;deep;deuce;far;-0,210327;22,599216;0,914062;down the line;Net;false;06:59:42;2394,48999
+Rikard Rykkvin;1;first_serve;Serve;Flat;77,342422;74;12;2;short;deuce;far;-0,820312;12,5625;deep;ad;far;1,035156;23,864841;2,564453;down the T;Net;false;07:00:03;2415,429932
+Rikard Rykkvin;1;second_serve;Serve;Flat;112,676109;74;12;2;short;ad;near;-2,30298;6,646001;deep;ad;far;1,132812;24,021091;2,648438;out wide;In;false;07:00:09;2422,199951
+Rasmus Kopperud Riis;2;second_return;Forehand;Flat;61,007767;74;12;2;out;deuce;far;-3,568359;23,983454;out;ad;near;-3,140625;-0,183155;1,479492;inside in;Out;false;07:00:10;2423,300049
+Rikard Rykkvin;1;first_serve;Serve;Flat;113,050606;75;12;2;short;ad;far;1,413086;16,84375;short;deuce;far;0,875;22,65391;1,988281;out wide;Net;false;07:00:21;2433,939941
+Rikard Rykkvin;1;first_serve;Serve;Flat;110,9757;75;12;2;short;ad;near;-0,457031;8,140625;deep;deuce;far;-0,556152;22,489841;2,164062;down the T;Out;false;07:00:28;2440,340088
+Rasmus Kopperud Riis;2;none;Backhand;Topspin;80,460312;75;12;2;deep;deuce;far;-2,729056;23,771925;out;deuce;near;0,414062;-0,98003;1,022461;inside out;In;false;07:00:29;2441,409912
+Rikard Rykkvin;1;first_serve;Serve;Flat;65,087723;75;12;2;short;deuce;near;2,445201;6,773032;deep;deuce;far;-1,019531;23,760563;2,320312;out wide;In;false;07:00:34;2447,110107
+Rasmus Kopperud Riis;4;none;Forehand;Topspin;64,169861;75;12;2;short;deuce;far;-0,19031;16,65625;deep;deuce;near;3,25;1,20747;0,608398;cross court;In;false;07:00:36;2448,709961
+Rikard Rykkvin;1;second_serve;Serve;Slice;76,083374;75;12;2;short;deuce;near;2,572513;6,966521;deep;deuce;far;-1,24707;23,427341;2,400391;out wide;In;false;07:00:42;2455,209961
+Rasmus Kopperud Riis;2;second_return;Forehand;Flat;94,111084;75;12;2;deep;ad;far;3,272669;21,212847;deep;deuce_alley;near;4,464844;0,387158;1,299805;down the line;In;false;07:00:44;2456,709961
+Rikard Rykkvin;1;first_serve;Serve;Flat;98,615837;76;12;2;short;ad;near;-2,930367;7,175675;deep;ad;far;1,216797;24,021091;2,496094;out wide;In;false;07:01:05;2478,149902
+Rasmus Kopperud Riis;2;first_return;Forehand;Topspin;52,019184;76;12;2;short;deuce;far;-1,245465;17,473372;out;ad_alley;near;-4,152344;-1,690967;1,229492;inside in;In;false;07:01:07;2479,419922
+Rikard Rykkvin;3;serve_plus_one;Forehand;Flat;84,250282;76;12;2;short;ad;near;-1,405273;6,371094;deep;deuce;far;-0,597168;22,677341;0,975586;down the line;In;false;07:01:09;2482,219971
+Rasmus Kopperud Riis;4;return_plus_one;Backhand;Flat;108,446724;76;12;2;short;ad;far;2,484056;18,287191;out;ad;near;-1,732422;-0,612842;0,446777;cross court;In;false;07:01:11;2483,76001
+Rikard Rykkvin;5;in_play;Backhand;Slice;47,379787;76;12;2;short;ad;far;0,194873;17,842646;deep;ad;far;3,015625;23,021091;0,883789;cross court;Net;false;07:01:12;2484,889893

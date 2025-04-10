@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tennis Match Data Visualization</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS Styles -->
+  <style>
+    /* ---------- Basic Reset & Global ---------- */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      /* Background for Charts View; Stats View has its own dark background */
+      background: linear-gradient(135deg, #ebf2f4 0%, #dff5f7 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    /* ---------- Header with Title, Toggle & Upload ---------- */
+    header {
+      width: 100%;
+      background-color: #ffd166;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      color: #073b4c;
+    }
+    /* Toggle Buttons (Stats / Charts) */
+    #viewToggle {
+      display: flex;
+      gap: 20px;
+    }
+    #viewToggle button {
+      background-color: #06d6a0;
+      color: #1c1c1c;
+      border: none;
+      border-radius: 4px;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    #viewToggle button:hover,
+    #viewToggle button.active {
+      background-color: #118ab2;
+      color: #fff;
+    }
+    /* Upload Button */
+    .upload-label {
+      font-size: 2rem;
+      color: #073b4c;
+      background-color: #06d6a0;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .upload-label:hover {
+      background-color: #118ab2;
+      color: #fff;
+    }
+    .upload-label input {
+      display: none;
+    }
+
+    /* ---------- Main Container for Both Views ---------- */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    /* ---------- Stats View (Dark Background, Horizontal Bars) ---------- */
+    #statsView {
+      background-color: #1c1c1c;
+      padding: 20px;
+      border-radius: 8px;
+      color: #ffffff;
+      display: none; /* default hidden; toggle will show this view */
+    }
+    .scoreboard {
+      font-size: 1.4rem;
+      margin: 20px 0;
+      text-align: center;
+    }
+    .stats-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .stat-row {
+      display: flex;
+      flex-direction: column;
+      background-color: #2c2c2c;
+      border-radius: 6px;
+      padding: 10px;
+      animation: fadeInUp 0.6s ease forwards;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      color: #ddd;
+      margin-bottom: 6px;
+    }
+    .bar-container {
+      width: 100%;
+      position: relative;
+      height: 25px;
+      background-color: #3c3c3c;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .host-bar, .guest-bar {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      transition: width 0.4s ease;
+      display: flex;
+      align-items: center;
+      font-size: 0.8rem;
+      color: #1c1c1c;
+      padding: 0 5px;
+    }
+    .host-bar {
+      left: 0;
+      justify-content: flex-start;
+      background-color: #06d6a0;
+    }
+    .guest-bar {
+      right: 0;
+      justify-content: flex-end;
+      background-color: #ffd166;
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* ---------- Charts View (Bright, KPI Cards & Chart Grid) ---------- */
+    #chartView {
+      display: none; /* default hidden; toggle will show the default view */
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      color: #073b4c;
+    }
+    /* KPI Cards */
+    #kpi-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .kpi-card {
+      width: 280px;
+      height: 150px;
+      margin: 20px;
+      background-color: #ef476f;
+      border-radius: 8px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .kpi-card:hover {
+      transform: translateY(-5px);
+      cursor: pointer;
+    }
+    .kpi-card h2 {
+      margin-bottom: 5px;
+      font-size: 1.3rem;
+    }
+    .kpi-card p {
+      font-size: 1rem;
+    }
+    /* Charts Grid */
+    #charts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 30px;
+    }
+    .chart-box {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .chart-box h3 {
+      color: #073b4c;
+      margin-bottom: 10px;
+    }
+    .chart-container {
+      width: 100%;
+      max-width: 500px;
+      height: 300px;
+    }
+    @media (max-width: 768px) {
+      .kpi-card { width: 90%; margin: 10px; }
+      .chart-container { height: 250px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER: Title, Toggle & Upload -->
+  <header>
+    <h1>Tennis Match Data</h1>
+    <!-- Toggle between Stats and Charts Views -->
+    <div id="viewToggle">
+      <button id="toggleStats" class="active">Stats View</button>
+      <button id="toggleCharts">Charts View</button>
+    </div>
+    <!-- Upload Button -->
+    <label class="upload-label" title="Upload CSV Files">
+      +
+      <input id="fileInput" type="file" accept=".csv" multiple />
+    </label>
+  </header>
+
+  <!-- MAIN CONTAINER FOR BOTH VIEWS -->
+  <div class="container">
+    <!-- STATS VIEW: Dark background, scoreboard & horizontal bars -->
+    <div id="statsView">
+      <div class="scoreboard" id="scoreboard">
+        <!-- Scoreboard text (e.g., 6–3, 3–1) will be inserted here -->
+      </div>
+      <div class="stats-list" id="statsList">
+        <!-- Stat rows (horizontal bars) will be dynamically injected here -->
+      </div>
+    </div>
+
+    <!-- CHARTS VIEW: Bright design with KPI cards & chart grid -->
+    <div id="chartView">
+      <div id="kpi-container">
+        <!-- KPI cards for Points, Stats, Game, Set, Shots will be added here -->
+      </div>
+      <div id="charts-grid">
+        <!-- Multiple charts will be rendered here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- External Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+
+  <!-- JavaScript -->
+  <script>
+    /* --------------- Global Data Store --------------- */
+    const csvData = {
+      points: null,
+      stats: null,
+      game: null,
+      set: null,
+      shots: null,
+    };
+
+    /* --------------- Toggle Between Views --------------- */
+    const statsView = document.getElementById('statsView');
+    const chartView = document.getElementById('chartView');
+    const btnStats = document.getElementById('toggleStats');
+    const btnCharts = document.getElementById('toggleCharts');
+
+    // By default, show Stats View
+    statsView.style.display = "block";
+    chartView.style.display = "none";
+    btnStats.classList.add("active");
+
+    btnStats.addEventListener('click', () => {
+      statsView.style.display = "block";
+      chartView.style.display = "none";
+      btnStats.classList.add("active");
+      btnCharts.classList.remove("active");
+    });
+    btnCharts.addEventListener('click', () => {
+      statsView.style.display = "none";
+      chartView.style.display = "block";
+      btnCharts.classList.add("active");
+      btnStats.classList.remove("active");
+    });
+
+    /* --------------- Utility: Animate Entrance --------------- */
+    function animateEntrance(el) {
+      anime({
+        targets: el,
+        opacity: [0, 1],
+        scale: [0.8, 1],
+        duration: 800,
+        easing: 'easeOutExpo'
+      });
+    }
+
+    /* --------------- CSV Type Detection --------------- */
+    function detectCSVType(rows) {
+      if (!rows || rows.length === 0) return null;
+      const headers = Object.keys(rows[0]).map(h => h.toLowerCase());
+      if (headers.includes("point winner")) return "points";
+      if (headers.includes("stat name")) return "stats";
+      if (headers.includes("game winner")) return "game";
+      if (headers.includes("set winner")) return "set";
+      if (headers.includes("player") && headers.includes("shot")) return "shots";
+      return null;
+    }
+
+    /* --------------- SCOREBOARD & STATS VIEW Rendering --------------- */
+    // Render scoreboard from Set Table (e.g., "6–3, 3–1")
+    function renderScoreboard(setData) {
+      if (!setData || !setData.length) return;
+      const sets = setData.map(row => `${row["Host Score"] || 0}–${row["Guest Score"] || 0}`);
+      document.getElementById('scoreboard').textContent = sets.join(', ');
+    }
+    // Render stat rows: try to use Stats CSV rows plus computed values
+    function renderStats() {
+      const container = document.getElementById('statsList');
+      container.innerHTML = ""; // clear previous rows
+
+      // Scoreboard (from Set CSV)
+      if (csvData.set) renderScoreboard(csvData.set);
+
+      // 1. From Stats CSV, display common stats from Host Set 1 & Guest Set 1
+      if (csvData.stats && csvData.stats.length) {
+        const relevantStats = [
+          "Aces",
+          "Service Winners",
+          "Double Faults",
+          "Winners",
+          "Forehand Winners",
+          "Backhand Winners",
+          "Unforced Errors",
+          "Forehand Unforced Errors",
+          "Backhand Unforced Errors",
+          "1st Serves",
+          "1st Serves In",
+          "1st Serves Won",
+          "2nd Serves",
+          "2nd Serves In",
+          "2nd Serves Won",
+          "1st Returns",
+          "1st Returns Won",
+          "2nd Returns",
+          "2nd Returns Won",
+          "Break Points",
+          "Break Points Won",
+          "Total Points"
+        ];
+        relevantStats.forEach(statName => {
+          let row = csvData.stats.find(r => (r["Stat Name"] || "").trim().toLowerCase() === statName.toLowerCase());
+          if (row) {
+            let hostVal = row["Host Set 1"] || 0;
+            let guestVal = row["Guest Set 1"] || 0;
+            addStatRow(container, statName, hostVal, guestVal);
+          }
+        });
+      }
+
+      // 2. Compute additional stats:
+      // a) Average Point Duration from Points CSV
+      if (csvData.points) {
+        let totalDur = 0, count = 0;
+        csvData.points.forEach(p => {
+          let d = p["Duration"];
+          if (typeof d === "string") d = parseFloat(d.replace(',', '.'));
+          if (!isNaN(d)) { totalDur += d; count++; }
+        });
+        let avgPointDur = count ? (totalDur / count).toFixed(1) : 0;
+        addStatRow(container, "Avg Point Duration (sec)", avgPointDur, 0);
+      }
+      // b) Average Game Duration from Game CSV
+      if (csvData.game) {
+        let totalDur = 0, count = 0;
+        csvData.game.forEach(g => {
+          let d = g["Duration"];
+          if (typeof d === "string") d = parseFloat(d.replace(',', '.'));
+          if (!isNaN(d)) { totalDur += d; count++; }
+        });
+        let avgGameDur = count ? (totalDur / count).toFixed(1) : 0;
+        addStatRow(container, "Avg Game Duration (sec)", avgGameDur, 0);
+      }
+      // c) Average & Max Shot Speed from Shots CSV
+      if (csvData.shots) {
+        let totalSpd = 0, spdCount = 0, maxSpd = 0;
+        csvData.shots.forEach(s => {
+          let spd = s["Speed (KM/H)"];
+          if (typeof spd === "string") spd = parseFloat(spd.replace(',', '.'));
+          if (!isNaN(spd)) {
+            totalSpd += spd;
+            spdCount++;
+            if (spd > maxSpd) maxSpd = spd;
+          }
+        });
+        let avgSpd = spdCount ? (totalSpd / spdCount).toFixed(1) : 0;
+        addStatRow(container, "Avg Shot Speed (km/h)", avgSpd, 0);
+        addStatRow(container, "Max Shot Speed (km/h)", maxSpd, 0);
+      }
+    }
+    // Helper: Create a stat row with dual horizontal bars
+    function addStatRow(container, label, hostVal, guestVal) {
+      hostVal = parseFloat(hostVal) || 0;
+      guestVal = parseFloat(guestVal) || 0;
+      const max = Math.max(hostVal, guestVal);
+      const hostPct = max > 0 ? (hostVal / max) * 100 : 0;
+      const guestPct = max > 0 ? (guestVal / max) * 100 : 0;
+
+      const row = document.createElement('div');
+      row.classList.add('stat-row');
+
+      const labelEl = document.createElement('div');
+      labelEl.classList.add('stat-label');
+      labelEl.textContent = label;
+
+      const barContainer = document.createElement('div');
+      barContainer.classList.add('bar-container');
+
+      const hostBar = document.createElement('div');
+      hostBar.classList.add('host-bar');
+      hostBar.style.width = hostPct + "%";
+      hostBar.textContent = hostVal;
+
+      const guestBar = document.createElement('div');
+      guestBar.classList.add('guest-bar');
+      guestBar.style.width = guestPct + "%";
+      guestBar.textContent = guestVal;
+
+      barContainer.appendChild(hostBar);
+      barContainer.appendChild(guestBar);
+      row.appendChild(labelEl);
+      row.appendChild(barContainer);
+      container.appendChild(row);
+    }
+
+    /* --------------- CHARTS VIEW Rendering --------------- */
+    // Utility: Add a chart box inside the charts grid and animate it
+    function addChartBox(title) {
+      const box = document.createElement('div');
+      box.classList.add('chart-box');
+      const h3 = document.createElement('h3');
+      h3.textContent = title;
+      box.appendChild(h3);
+      const canvas = document.createElement('canvas');
+      canvas.classList.add('chart-container');
+      box.appendChild(canvas);
+      document.getElementById('charts-grid').appendChild(box);
+      animateEntrance(box);
+      return canvas.getContext('2d');
+    }
+    // Clear KPI container and charts grid
+    function clearChartsView() {
+      document.getElementById('kpi-container').innerHTML = "";
+      document.getElementById('charts-grid').innerHTML = "";
+    }
+    // Render KPI Cards for various CSVs
+    function renderKPICards() {
+      const kpiContainer = document.getElementById('kpi-container');
+      // Points KPIs
+      if (csvData.points && csvData.points.length) {
+        let totalPoints = csvData.points.length;
+        let totalDur = 0, cnt = 0;
+        let winnersCount = { host: 0, guest: 0, other: 0 };
+        csvData.points.forEach(row => {
+          let d = row["Duration"];
+          if (typeof d === "string") d = parseFloat(d.replace(',', '.'));
+          if (!isNaN(d)) { totalDur += d; cnt++; }
+          let w = (row["Point Winner"] || "").toLowerCase();
+          if (w === "host") winnersCount.host++;
+          else if (w === "guest") winnersCount.guest++;
+          else winnersCount.other++;
+        });
+        let avgDur = cnt ? (totalDur / cnt).toFixed(2) : "N/A";
+        kpiContainer.appendChild(createKPICard("Total Points", totalPoints, "Points played"));
+        kpiContainer.appendChild(createKPICard("Avg Pt Duration", avgDur + " sec", "Average duration"));
+        kpiContainer.appendChild(createKPICard("Winners (H/G)", winnersCount.host + " / " + winnersCount.guest, "Point wins"));
+      }
+      // Stats KPIs (example: first serve percentages)
+      if (csvData.stats && csvData.stats.length) {
+        let fsRow = csvData.stats.find(r => (r["Stat Name"] || "").trim().toLowerCase() === "1st serves");
+        let fsInRow = csvData.stats.find(r => (r["Stat Name"] || "").trim().toLowerCase() === "1st serves in");
+        if (fsRow && fsInRow) {
+          let hostPct = (fsRow["Host Set 1"] && fsInRow["Host Set 1"]) ? ((fsInRow["Host Set 1"] / fsRow["Host Set 1"]) * 100).toFixed(1) : "N/A";
+          let guestPct = (fsRow["Guest Set 1"] && fsInRow["Guest Set 1"]) ? ((fsInRow["Guest Set 1"] / fsRow["Guest Set 1"]) * 100).toFixed(1) : "N/A";
+          kpiContainer.appendChild(createKPICard("Host 1st Serve %", hostPct + "%", "Accuracy"));
+          kpiContainer.appendChild(createKPICard("Guest 1st Serve %", guestPct + "%", "Accuracy"));
+        }
+      }
+      // Game KPIs
+      if (csvData.game && csvData.game.length) {
+        let totalGames = csvData.game.length;
+        let totDur = 0, cntGame = 0, longest = 0;
+        csvData.game.forEach(row => {
+          let d = row["Duration"];
+          if (typeof d === "string") d = parseFloat(d.replace(',', '.'));
+          if (!isNaN(d)) { totDur += d; cntGame++; if (d > longest) longest = d; }
+        });
+        let avgDurGame = cntGame ? (totDur / cntGame).toFixed(2) : "N/A";
+        kpiContainer.appendChild(createKPICard("Total Games", totalGames, "Games played"));
+        kpiContainer.appendChild(createKPICard("Avg Game Dur", avgDurGame + " sec", "Avg duration"));
+        kpiContainer.appendChild(createKPICard("Longest Game", longest + " sec", "Peak duration"));
+      }
+      // Set KPIs
+      if (csvData.set && csvData.set.length) {
+        let totalSets = csvData.set.length;
+        let longestSet = 0, hostWins = 0, guestWins = 0;
+        csvData.set.forEach(row => {
+          let d = row["Duration"];
+          if (typeof d === "string") d = parseFloat(d.replace(',', '.'));
+          if (!isNaN(d) && d > longestSet) longestSet = d;
+          let w = (row["Set Winner"] || "").toLowerCase();
+          if (w === "host") hostWins++;
+          else if (w === "guest") guestWins++;
+        });
+        kpiContainer.appendChild(createKPICard("Total Sets", totalSets, "Sets played"));
+        kpiContainer.appendChild(createKPICard("Longest Set", longestSet + " sec", "Longest duration"));
+        kpiContainer.appendChild(createKPICard("Set Wins (H/G)", hostWins + " / " + guestWins, "Distribution"));
+      }
+      // Shots KPIs
+      if (csvData.shots && csvData.shots.length) {
+        let totalShots = csvData.shots.length;
+        let totSpd = 0, cntSpd = 0, maxSpd = 0;
+        csvData.shots.forEach(row => {
+          let spd = row["Speed (KM/H)"];
+          if (typeof spd === "string") spd = parseFloat(spd.replace(',', '.'));
+          if (!isNaN(spd)) {
+            totSpd += spd; cntSpd++;
+            if (spd > maxSpd) maxSpd = spd;
+          }
+        });
+        let avgSpd = cntSpd ? (totSpd / cntSpd).toFixed(1) : "N/A";
+        kpiContainer.appendChild(createKPICard("Total Shots", totalShots, "Shots taken"));
+        kpiContainer.appendChild(createKPICard("Avg Shot Speed", avgSpd + " km/h", "Average Speed"));
+        kpiContainer.appendChild(createKPICard("Max Shot Speed", maxSpd + " km/h", "Peak Speed"));
+      }
+    }
+    // Helper to create a KPI card element
+    function createKPICard(title, summary, details) {
+      const card = document.createElement('div');
+      card.classList.add('kpi-card');
+      const h2 = document.createElement('h2');
+      h2.textContent = title;
+      const p1 = document.createElement('p');
+      p1.textContent = summary;
+      const p2 = document.createElement('p');
+      p2.textContent = details;
+      card.appendChild(h2);
+      card.appendChild(p1);
+      card.appendChild(p2);
+      animateEntrance(card);
+      return card;
+    }
+    // Render various detailed charts based on CSV types
+    function renderChartsPoints() {
+      if (!csvData.points || !csvData.points.length) return;
+      // Doughnut chart: Point Winner Distribution
+      let winners = { host: 0, guest: 0, other: 0 };
+      csvData.points.forEach(row => {
+        let w = (row["Point Winner"] || "").toLowerCase();
+        if (w === "host") winners.host++;
+        else if (w === "guest") winners.guest++;
+        else winners.other++;
+      });
+      new Chart(addChartBox("Points Winner Distribution"), {
+        type: 'doughnut',
+        data: {
+          labels: ['Host', 'Guest', 'Other'],
+          datasets: [{
+            data: [winners.host, winners.guest, winners.other],
+            backgroundColor: ['#ef476f','#ffd166','#06d6a0']
+          }]
+        },
+        options: { responsive: true, animation: { duration: 1000, easing: 'easeOutExpo' } }
+      });
+      // Line chart: Avg Point Duration per Game
+      let gameDurations = {};
+      csvData.points.forEach(row => {
+        let game = row["Game"];
+        let d = row["Duration"];
+        if (typeof d === "string") d = parseFloat(d.replace(',', '.'));
+        if (!isNaN(d)) {
+          if (!gameDurations[game]) gameDurations[game] = { total: 0, count: 0 };
+          gameDurations[game].total += d;
+          gameDurations[game].count++;
+        }
+      });
+      const games = Object.keys(gameDurations).sort((a, b) => a - b);
+      const avgDurations = games.map(g => (gameDurations[g].total / gameDurations[g].count).toFixed(2));
+      new Chart(addChartBox("Avg Point Duration per Game"), {
+        type: 'line',
+        data: {
+          labels: games,
+          datasets: [{
+            label: "Duration (sec)",
+            data: avgDurations,
+            fill: false,
+            borderColor: '#073b4c',
+            tension: 0.1
+          }]
+        },
+        options: { responsive: true, animation: { duration: 1000, easing: 'easeOutExpo' }, scales: { y: { beginAtZero: true } } }
+      });
+    }
+    function renderChartsStats() {
+      if (!csvData.stats || !csvData.stats.length) return;
+      let fsRow = csvData.stats.find(r => (r["Stat Name"] || "").trim().toLowerCase() === "1st serves");
+      let fsInRow = csvData.stats.find(r => (r["Stat Name"] || "").trim().toLowerCase() === "1st serves in");
+      if (!fsRow || !fsInRow) return;
+      let hostPct = (fsRow["Host Set 1"] && fsInRow["Host Set 1"]) ? ((fsInRow["Host Set 1"] / fsRow["Host Set 1"]) * 100).toFixed(1) : 0;
+      let guestPct = (fsRow["Guest Set 1"] && fsInRow["Guest Set 1"]) ? ((fsInRow["Guest Set 1"] / fsRow["Guest Set 1"]) * 100).toFixed(1) : 0;
+      new Chart(addChartBox("1st Serve %"), {
+        type: 'bar',
+        data: {
+          labels: ['Host', 'Guest'],
+          datasets: [{
+            label: "1st Serve %",
+            data: [hostPct, guestPct],
+            backgroundColor: ['#ef476f','#073b4c']
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          animation: { duration: 1000, easing: 'easeOutExpo' },
+          scales: { x: { beginAtZero: true, max: 100 } }
+        }
+      });
+    }
+    function renderChartsGame() {
+      if (!csvData.game || !csvData.game.length) return;
+      let winners = { host: 0, guest: 0, other: 0 };
+      let durations = [];
+      let gameNums = [];
+      csvData.game.forEach((row, i) => {
+        let w = (row["Game Winner"] || "").toLowerCase();
+        if (w === "host") winners.host++;
+        else if (w === "guest") winners.guest++;
+        else winners.other++;
+        let d = row["Duration"];
+        if (typeof d === "string") d = parseFloat(d.replace(',', '.'));
+        if (!isNaN(d)) durations.push(d);
+        gameNums.push(i+1);
+      });
+      new Chart(addChartBox("Game Winner Distribution"), {
+        type: 'doughnut',
+        data: {
+          labels: ['Host', 'Guest', 'Other'],
+          datasets: [{
+            data: [winners.host, winners.guest, winners.other],
+            backgroundColor: ['#ef476f','#ffd166','#06d6a0']
+          }]
+        },
+        options: { responsive: true, animation: { duration: 1000, easing: 'easeOutExpo' } }
+      });
+      new Chart(addChartBox("Game Durations"), {
+        type: 'bar',
+        data: {
+          labels: gameNums,
+          datasets: [{
+            label: "Duration (sec)",
+            data: durations,
+            backgroundColor: '#073b4c'
+          }]
+        },
+        options: { responsive: true, animation: { duration: 1000, easing: 'easeOutExpo' }, scales: { y: { beginAtZero: true } } }
+      });
+    }
+    function renderChartsSet() {
+      if (!csvData.set || !csvData.set.length) return;
+      let setNums = [];
+      let hostScores = [];
+      let guestScores = [];
+      let winners = { host: 0, guest: 0, draw: 0 };
+      csvData.set.forEach((row, idx) => {
+        setNums.push(row["Set"] || idx+1);
+        hostScores.push(row["Host Score"] || 0);
+        guestScores.push(row["Guest Score"] || 0);
+        let w = (row["Set Winner"] || "").toLowerCase();
+        if (w === "host") winners.host++;
+        else if (w === "guest") winners.guest++;
+        else winners.draw++;
+      });
+      new Chart(addChartBox("Set Scores Comparison"), {
+        type: 'bar',
+        data: {
+          labels: setNums,
+          datasets: [
+            { label: "Host Score", data: hostScores, backgroundColor: "#ef476f" },
+            { label: "Guest Score", data: guestScores, backgroundColor: "#073b4c" }
+          ]
+        },
+        options: { responsive: true, animation: { duration: 1000, easing: 'easeOutExpo' }, scales: { y: { beginAtZero: true } } }
+      });
+      new Chart(addChartBox("Set Winner Distribution"), {
+        type: 'doughnut',
+        data: {
+          labels: ['Host', 'Guest', 'Draw'],
+          datasets: [{
+            data: [winners.host, winners.guest, winners.draw],
+            backgroundColor: ['#ef476f','#073b4c','#ffd166']
+          }]
+        },
+        options: { responsive: true, animation: { duration: 1000, easing: 'easeOutExpo' } }
+      });
+    }
+    function renderChartsShots() {
+      if (!csvData.shots || !csvData.shots.length) return;
+      let strokeSpeeds = {};
+      let shotTypeCounts = {};
+      csvData.shots.forEach(row => {
+        let stroke = row["Stroke"] || "Unknown";
+        let spd = row["Speed (KM/H)"];
+        if (typeof spd === "string") spd = parseFloat(spd.replace(',', '.'));
+        if (!isNaN(spd)) {
+          if (!strokeSpeeds[stroke]) strokeSpeeds[stroke] = { total: 0, count: 0 };
+          strokeSpeeds[stroke].total += spd;
+          strokeSpeeds[stroke].count++;
+        }
+        let type = row["Type"] || "Unknown";
+        shotTypeCounts[type] = (shotTypeCounts[type] || 0) + 1;
+      });
+      const strokes = Object.keys(strokeSpeeds);
+      const avgSpeeds = strokes.map(s => (strokeSpeeds[s].total / strokeSpeeds[s].count).toFixed(1));
+      new Chart(addChartBox("Avg Shot Speed by Stroke"), {
+        type: 'bar',
+        data: {
+          labels: strokes,
+          datasets: [{
+            label: "Avg Speed (km/h)",
+            data: avgSpeeds,
+            backgroundColor: strokes.map((s,i) => ['#ef476f','#ffd166','#06d6a0','#118ab2','#073b4c'][i % 5])
+          }]
+        },
+        options: { responsive: true, animation: { duration: 1000, easing: 'easeOutExpo' }, scales: { y: { beginAtZero: true } } }
+      });
+      new Chart(addChartBox("Shot Type Distribution"), {
+        type: 'pie',
+        data: {
+          labels: Object.keys(shotTypeCounts),
+          datasets: [{
+            data: Object.values(shotTypeCounts),
+            backgroundColor: ['#ef476f','#ffd166','#06d6a0','#118ab2','#073b4c']
+          }]
+        },
+        options: { responsive: true, animation: { duration: 1000, easing: 'easeOutExpo' } }
+      });
+    }
+    // Render all charts together
+    function renderCharts() {
+      clearChartsView();
+      renderKPICards();
+      renderChartsPoints();
+      renderChartsStats();
+      renderChartsGame();
+      renderChartsSet();
+      renderChartsShots();
+    }
+
+    /* --------------- CSV Upload & Parsing --------------- */
+    document.getElementById('fileInput').addEventListener('change', function(e) {
+      // Clear previous data and views
+      for (let key in csvData) csvData[key] = null;
+      document.getElementById('scoreboard').textContent = "";
+      document.getElementById('statsList').innerHTML = "";
+      clearChartsView();
+      
+      Array.from(e.target.files).forEach(file => {
+        Papa.parse(file, {
+          header: true,
+          dynamicTyping: true,
+          complete: function(results) {
+            const type = detectCSVType(results.data);
+            if (type) {
+              csvData[type] = results.data;
+            }
+            // Render both views after each file parsed
+            renderStats();
+            renderCharts();
+          },
+          error: function(err) {
+            console.error("Error parsing CSV:", err);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
